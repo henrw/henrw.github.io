@@ -42,7 +42,7 @@
         .container-fluid {
             /* margin-right: auto;
             margin-left: auto; */
-            max-width: 1920px;
+            max-width: 1440px;
             /* or 950px */
         }
 
@@ -83,6 +83,11 @@
             color: #00274C;
         }
 
+        .center-block {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .umich a:hover {
             text-decoration: none;
@@ -105,13 +110,17 @@
         .nav-customize {
             width: 20%;
         }
+
+        .carousel-indicators .active {
+            background-color: #B73034;
+        }
     </style>
 </head>
 
 <body class="bg-light">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 col-sm-12" style="max-width: 640px;">
+            <div class="col-md-4 col-sm-12" style="max-width: 960px;">
                 <!-- <div class="align-items-center text-center"> -->
                 <div class="sticky-md-top text-center p-5">
                     <img src="content/bio/profile.JPG" class="figure-img img-fluid rounded"
@@ -137,15 +146,61 @@
                         <a href="https://github.com/henrw" class="link-unstyled"><i class="fab fa-github"
                                 style="color: #000000;"></i></a>
                     </h2>
-                    <h6 class="my-3" style="font-weight: bolder; font-family:'Courier New', Courier, monospace;">muzhew AT cs DOT cmu.edu</h6>
+                    <h6 class="mb-5" style="font-weight: bolder; font-family:'Courier New', Courier, monospace;">muzhew
+                        AT cs DOT cmu.edu</h6>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>News <i class="far fa-newspaper"></i></i></h5>
+                            <div id="carouselExampleCaptions" class="carousel slide" style="width: 100%;">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="content/news/22-11-05-MI-AI-symposium.jpg"
+                                            class="d-block center-block" style="height: 200px;" alt="...">
+                                        <div class="carousel-caption d-none d-sm-block">
+                                            <!-- <h5>First slide label</h5> -->
+                                            <h7>(11/05/2022) I attended Michigan AI symposium 2022 and won the best demo
+                                                with my team.</h7>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="content/news/23-07-28-LearnLab-SummerSchool.JPG"
+                                            class="d-block center-block" style="height: 200px;" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <!-- <h5>Second slide label</h5> -->
+                                            <h7>(07/28/2023) I finished CMU LearnLab Summer School in CML track with my
+                                                amazing teammates and mentors.</h7>
+                                        </div>
+                                    </div>
 
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- </div> -->
             </div>
 
             <!-- RIGHT -->
-            <div class="col-md-8 col-sm-12 p-5" style="max-width: 1280px;">
-                <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <div class="col-md-8 col-sm-12 p-5" style="max-width: 960px;">
+                <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
+                    data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
                     <div id="about">
                         <h2>About Me</h2>
                         <p class="cmu"> I am a first-year master student at the <a href="https://www.hcii.cmu.edu/"
@@ -281,9 +336,9 @@
                                     <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
                                         <h3 class="h4 mb-1">University of Michigan Dean's Honor List</h3>
                                         <h6 class="d-block text-uppercase font-weight-bold text-muted">
-                                            <time datetime="2022-01">Jan 2022</time>,
+                                            <time datetime="2022-01">Jan</time>,
                                             <time datetime="2022-06">Jun 2022</time>,
-                                            <time datetime="2023-01">Jan 2023</time>,
+                                            <time datetime="2023-01">Jan</time>,
                                             <time datetime="2023-06">Jun 2023</time>
                                         </h6>
                                     </div>
@@ -358,7 +413,7 @@
                                         alt="...">
                                 </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 gap-1">
                                 <h5>Rubikon: Enabling Intelligent Tutoring
                                     of 3D Physical Tasks through User Modeling and On-Demand Augmented Reality Learning
                                 </h5>
@@ -368,7 +423,7 @@
                                 <h6><em>Submitted to the 36th Annual ACM
                                         Symposium on User Interface Software and Technology (UIST '23)</em></h6>
                                 <h7>
-                                    <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                    <a class="btn btn-dark"  type="button" data-bs-toggle="collapse" data-bs-target="#RubikonAbstract" aria-expanded="false" aria-controls="collapseExample"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a>
                                     <a href="content/research/Rubikon/RubikonUIST23.pdf" class="btn btn-outline-dark"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
@@ -377,6 +432,11 @@
                                     <!-- <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Video</a> -->
                                 </h7>
+                                <div class="collapse my-2" id="RubikonAbstract">
+                                    <div class="card card-body">
+                                        Existing video and AR tutorials for 3D physical tasks do not actively engage learners or provide adaptive feedback. Moreover, providing repeated practices for physical task learning is strenuous due to the required manual configuration of physical objects to create learning opportunities. We identify key components for 3D physical task learning that builds upon the theories of intelligent tutoring systems, with the capability to render on-demand 3D tasks through AR, and offer real-time adaptive feedback to learners. We instantiate the key components through developing Rubikon, a tutoring system for solving Rubik's Cube. We highlight three unique features of Rubikon: 1) presenting extended views of 3D objects otherwise hidden from the user; 2) generating new problems for physical tasks on-demand through AR rendering; and 3) capturing user behavior and object status through computer vision for model tracing and providing immediate feedback. We compared Rubikon with two baselines through a between-subjects experiment with 36 participants, and demonstrated the effectiveness of Rubikon in yielding higher learning gains, due to the dynamic rendering of tasks adaptive to the users' knowledge.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row m-3">
@@ -386,23 +446,27 @@
                                         class="figure-img img-fluid rounded " alt="...">
                                 </div>
                             </div>
-                            <div class="col-8">
+                            <div class="col-8 gap-1">
                                 <h5>Why Antiwork: A RoBERTa-Based System forWork-Related Stress
                                     Identification and Leading Factor Analysis
                                 </h5>
                                 <h6 class="text-muted">Tao Lu, <u>Muzhe Wu</u>, Xinyi Lu, Siyuan Xu, Shuyu Zhan, Anuj
                                     Tambwekar, Emily Provost</h6>
                                 <h6><em>Submitted to EMNLP 2023</em></h6>
-                                <!-- <h7>
-                                <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                <h7>
+                                <a class="btn btn-dark"  type="button" data-bs-toggle="collapse" data-bs-target="#AntiworkAbstract" aria-expanded="false" aria-controls="collapseExample"
                                     style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a>
-                                <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                <!-- <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
                                     style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
                                 <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
                                     style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a>
                                 <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
-                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Video</a>
-                            </h7> -->
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Video</a> -->
+                            </h7>
+                            <div class="collapse my-2" id="AntiworkAbstract">
+                                <div class="card card-body">
+                                    Harsh working environments and work-related stress have been known to contribute to mental health problems such as anxiety, depression, and suicidal ideation. As such, it is paramount to create solutions that can both detect employee unhappiness and find the root cause of the problem.  While prior works have examined causes of mental health using machine learning, they typically focus on general mental health analysis, with few of them focusing on explainable solutions or looking at the workplace-specific setting. r/antiwork is a subreddit for the antiwork movement, which is the desire to stop working altogether. Using this subreddit as a proxy for work environment dissatisfaction, we create a new dataset for antiwork sentiment detection and subsequently train a model that highlights the words with antiwork sentiments. Following this, we performed a qualitative and quantitative analysis to uncover some of the key insights into the mindset of individuals who identify with the antiwork movement and how their working environments influenced them. We find that working environments that do not give employees authority or responsibility, frustrating recruiting experiences, and unfair compensation, are some of the leading causes of the antiwork sentiment, resulting in a lack of self-confidence and motivation among their employees.                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="row m-3">
@@ -421,8 +485,8 @@
                                 <!-- <h6><em>Submitted to the 36th Annual ACM
                                     Symposium on User Interface Software and Technology (UIST '23)</em></h6> -->
                                 <h7>
-                                    <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a>
+                                    <!-- <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a> -->
                                     <a href="content/research/MisinfoEngage/slides.pdf" class="btn btn-outline-dark"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Slides</a>
                                 </h7>
@@ -515,7 +579,8 @@
                                 <h5>Mask Distribution Simulator
                                 </h5>
                                 <h7 class="text-muted">C++ program that simulates the distribution of masks among the
-                                    cities with a certain mask production capacity during the COVID-19 pandemic.</h7><br>
+                                    cities with a certain mask production capacity during the COVID-19 pandemic.</h7>
+                                <br>
                                 <h7>
                                     <a href="https://github.com/henrw/VG101_project_MaskDistributionSimulator"
                                         class="btn btn-outline-dark"
