@@ -52,13 +52,13 @@
         .cmu a:active {
             text-decoration: none;
             font-weight: bold;
-            color: #B73034;
+            color: #000000;
         }
 
         .cmu a:hover {
             text-decoration: none;
             font-weight: bold;
-            color: #f64046;
+            color: #B73034;
         }
 
         .normal a:link,
@@ -136,8 +136,12 @@
             font-size: 1em;
         }
 
-        .mt-n1 {
-            margin-top: -0.5rem !important;
+        .mb-n1 {
+            margin-bottom: -0.25rem !important;
+        }
+
+        .mb-n0 {
+            margin-bottom: -0.125rem !important;
         }
 
         /* p {
@@ -181,36 +185,40 @@
         </div> -->
         <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-12 py-5">
                 <!-- <div class="align-items-center text-center"> -->
-                <div class="sticky-md-top text-center py-5">
+                <div class="sticky-md-top">
                     <img src="content/bio/profile.JPG" class="figure-img img-fluid rounded" style="width: 70%;"
                         alt="...">
                     <div class="my-4">
-                        <h2>Muzhe Wu</h2>
-                        <h6 class="mt-n1" style="font-size: small;">/ Moo-Zheh Woo /</h6>
-                    </div>
-
-                    <div class="my-4">
-                        <h6>
+                        <h6 class="mb-n1" style="font-size: small;">| Moo-Zheh Woo |</h6>
+                        <h2 class="mb-n0">Muzhe Wu</h2>
+                        <h5>
                             Student / Researcher
+                        </h5>
+                        <h6 class="mt-4">
+                            <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled"><i class="fas fa-envelope"></i>
+                                Email</a>
                         </h6>
-                        <h2 class="my-2">
-                            <a href="content/bio/MuzheWuCV.pdf"><i class="far fa-file" style="color: #a9a9a9;"></i></a>
-                            <!-- <a href="mailto: muzhew@andrew.cmu.edu"><i class="far fa-envelope"></i></a> -->
-                            <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled"><i
-                                    class="fab fa=fw fa-linkedin" style="color: #0A66C2;"></i></a>
+                        <h6>
+                            <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled"><i class="fab fa-linkedin"
+                                    style="color: #0A66C2;"></i> LinkedIn</a>
+                        </h6>
+                        <h6>
                             <a href="https://twitter.com/MuzheW" class="link-unstyled"><i class="fab fa-twitter"
-                                    style="color: #1DA1F2;"></i></a>
+                                    style="color: #1DA1F2;"></i> Twitter</a>
+                        </h6>
+                        <h6>
                             <a href="https://github.com/henrw" class="link-unstyled"><i class="fab fa-github"
-                                    style="color: #000000;"></i></a>
-                        </h2>
-                        <h6 class="mb-5" style="font-weight: bolder; font-family:'Courier New', Courier, monospace;">
-                            muzhew
-                            AT cs DOT cmu.edu</h6>
+                                    style="color: #000000;"></i> GitHub</a>
+                        </h6>
+                        <h6>
+                            <a href="content/bio/MuzheWuCV.pdf" class="link-unstyled"><i class="fas fa-file"></i>
+                                Curriculum Vitae (PDF)</a>
+                        </h6>
                     </div>
 
-                    <div class="px-2">
+                    <!-- <div class="px-2">
                         <div class="card">
                             <div class="card-body">
                                 <h5>News <i class="far fa-newspaper"></i></i></h5>
@@ -221,14 +229,12 @@
                                             aria-label="Slide 1"></button>
                                         <button type="button" data-bs-target="#carouselExampleCaptions"
                                             data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <img src="content/news/23-07-28-LearnLab-SummerSchool.JPG"
                                                 class="d-block center-block" style="height: 170px;" alt="...">
                                             <div class="carousel-caption d-none d-md-block">
-                                                <!-- <h5>Second slide label</h5> -->
                                                 <h7>(07/28/2023) I finished CMU LearnLab Summer School in CML track with
                                                     my
                                                     amazing teammates and mentors.</h7>
@@ -238,7 +244,6 @@
                                             <img src="content/news/22-11-05-MI-AI-symposium.jpg"
                                                 class="d-block center-block" style="height: 170px;" alt="...">
                                             <div class="carousel-caption d-none d-sm-block">
-                                                <!-- <h5>First slide label</h5> -->
                                                 <h7>(11/05/2022) I attended Michigan AI symposium 2022 and won the best
                                                     demo
                                                     with my team.</h7>
@@ -258,13 +263,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- </div> -->
             </div>
 
             <!-- RIGHT -->
-            <div class="col-md-7 col-sm-12 p-5">
+            <div class="col-md-7 col-sm-12 py-md-5">
                 <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
                     data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
                     <div id="about">
@@ -287,7 +292,10 @@
                             <span class="normal"><a href="https://www.andrew.cmu.edu/user/hongs/" class="umich">Prof.
                                     Hong
                                     Shen</a></span>
-                            on AI Auditing. I have also worked with
+                            on AI Auditing and <span class="normal"><a href="https://www.davidlindlbauer.com/"
+                                    class="umich">Prof.
+                                    David
+                                    Lindlbauer</a></span> on XR spatial understanding. I have also worked with
                             <span class="normal"><a href="https://guoanhong.com/" class="umich">Prof. Anhong
                                     Guo</a></span>,
                             <span class="normal"><a href="https://web.eecs.umich.edu/~xwanghci/" class="umich">Prof. Xu
@@ -486,7 +494,7 @@
                                         alt="...">
                                 </div>
                             </div>
-                            <div class="col-8 gap-1">
+                            <div class="col-8">
                                 <h5>Rubikon: Enabling Intelligent Tutoring
                                     of 3D Physical Tasks through User Modeling and On-Demand Augmented Reality Learning
                                 </h5>
@@ -529,61 +537,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row m-3">
+                        <div class="row my-3">
                             <div class="col-4">
                                 <div class="mx-2">
-                                    <img src="content/research/WhyAntiwork/teaser.png"
-                                        class="figure-img img-fluid rounded " alt="...">
-                                </div>
-                            </div>
-                            <div class="col-8 gap-1">
-                                <h5>Why Antiwork: A RoBERTa-Based System forWork-Related Stress
-                                    Identification and Leading Factor Analysis
-                                </h5>
-                                <h6 class="text-muted">Tao Lu, <u>Muzhe Wu</u>, Xinyi Lu, Siyuan Xu, Shuyu Zhan, Anuj
-                                    Tambwekar, Emily Provost</h6>
-                                <!-- <h6><em>Submitted to EMNLP 2023</em></h6> -->
-                                <h7>
-                                    <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#AntiworkAbstract" aria-expanded="false"
-                                        aria-controls="collapseExample"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a>
-                                    <a href="content/research/WhyAntiwork/WhyAntiworkEMNLP23.pdf"
-                                        class="btn btn-outline-dark"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
-                                    <!-- <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
-                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a>
-                                <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
-                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Video</a> -->
-                                </h7>
-                                <div class="collapse my-2" id="AntiworkAbstract">
-                                    <div class="card card-body">
-                                        Harsh working environments and work-related stress have been known to contribute
-                                        to mental health problems such as anxiety, depression, and suicidal ideation. As
-                                        such, it is paramount to create solutions that can both detect employee
-                                        unhappiness and find the root cause of the problem. While prior works have
-                                        examined causes of mental health using machine learning, they typically focus on
-                                        general mental health analysis, with few of them focusing on explainable
-                                        solutions or looking at the workplace-specific setting. r/antiwork is a
-                                        subreddit for the antiwork movement, which is the desire to stop working
-                                        altogether. Using this subreddit as a proxy for work environment
-                                        dissatisfaction, we create a new dataset for antiwork sentiment detection and
-                                        subsequently train a model that highlights the words with antiwork sentiments.
-                                        Following this, we performed a qualitative and quantitative analysis to uncover
-                                        some of the key insights into the mindset of individuals who identify with the
-                                        antiwork movement and how their working environments influenced them. We find
-                                        that working environments that do not give employees authority or
-                                        responsibility, frustrating recruiting experiences, and unfair compensation, are
-                                        some of the leading causes of the antiwork sentiment, resulting in a lack of
-                                        self-confidence and motivation among their employees. </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row m-3">
-                            <div class="col-4">
-                                <div class="mx-2">
-                                    <img src="content/research/MisinfoEngage/teaser.png"
-                                        class="figure-img img-fluid rounded " alt="...">
+                                    <img src="content/research/MisinfoEngage/teaser.png" class="figure-img img-fluid rounded "
+                                        alt="...">
                                 </div>
                             </div>
                             <div class="col-8">
@@ -593,14 +551,14 @@
                                 </h5>
                                 <h6 class="text-muted"><u>Muzhe Wu</u>, Veronica Perez Rosas</h6>
                                 <!-- <h6><em>Submitted to the 36th Annual ACM
-                                    Symposium on User Interface Software and Technology (UIST '23)</em></h6> -->
-                                <h7>
-                                    <!-- <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a> -->
-                                    <a href="content/research/MisinfoEngage/MisinfoEngageSlides.pdf"
-                                        class="btn btn-outline-dark"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Slides</a>
-                                </h7>
+                                        Symposium on User Interface Software and Technology (UIST '23)</em></h6> -->
+                                        <h7>
+                                            <!-- <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a> -->
+                                            <a href="content/research/MisinfoEngage/MisinfoEngageSlides.pdf"
+                                                class="btn btn-outline-dark"
+                                                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Slides</a>
+                                        </h7>
                             </div>
                         </div>
                     </div>
@@ -610,8 +568,8 @@
                         <div class="row my-3">
                             <div class="col-4">
                                 <div class="mx-2">
-                                    <img src="content/projects/visual/preview.jpg"
-                                        class="figure-img img-fluid rounded " alt="...">
+                                    <img src="content/projects/visual/preview.jpg" class="figure-img img-fluid rounded "
+                                        alt="...">
                                 </div>
                             </div>
                             <div class="col-8">
@@ -625,6 +583,33 @@
                                     <a href="https://github.com/dailyn269/XR_HowDoYouSeeTheWorld_Project"
                                         class="btn btn-outline-dark"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Code</a>
+                                </h7>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-4">
+                                <div class="mx-2">
+                                    <img src="content/research/WhyAntiwork/teaser.png"
+                                        class="figure-img img-fluid rounded " alt="...">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5>Why Antiwork: A RoBERTa-Based System forWork-Related Stress
+                                    Identification and Leading Factor Analysis
+                                </h5>
+                                <h7 class="text-muted">Leverage a subreddit as a data source, researchers created and
+                                    trained a model to detect antiwork sentiments, revealing that lack of authority,
+                                    frustrating recruitment experiences, and unfair compensation are major contributors
+                                    to employee dissatisfaction and antiwork sentiments.</h7><br>
+                                <!-- <h6><em>Submitted to EMNLP 2023</em></h6> -->
+                                <h7>
+                                    <a href="content/research/WhyAntiwork/WhyAntiworkEMNLP23.pdf"
+                                        class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
+                                    <!-- <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a>
+                                <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Video</a> -->
                                 </h7>
                             </div>
                         </div>
@@ -724,10 +709,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-1"></div>
-            <div class="p-5">
+            <!-- <div class="col-md-1"></div> -->
+            <!-- <div class="p-5">
                 <footer class="footer text-center text-muted">Copyright © 2023 Muzhe Wu</footer>
-            </div>
+            </div> -->
 
 
             <!-- JQUERY & BOOTSTRAP JS -->
