@@ -52,7 +52,7 @@
         .cmu a:visited,
         .cmu a:active {
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 900;
             color: #941120;
         }
 
@@ -77,8 +77,13 @@
         .umich a:visited,
         .umich a:active {
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 900;
             color: #00274C;
+        }
+
+        .bold-font {
+            font-family: 'Montserrat', sans-serif;
+            /* font-family: 'Arial Black', sans-serif; */
         }
 
         .center-block {
@@ -110,7 +115,7 @@
         h4,
         h5,
         h6 {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         body {
@@ -165,6 +170,30 @@
         .carousel-indicators .active {
             background-color: #B73034;
         }
+
+        .w-full-sm {
+            width: 100%;
+        }
+
+        .center-sm {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        @media (min-width: 768px) {
+            .w-80-md {
+                width: 80%;
+            }
+            .left-md {
+                display: flex;
+                justify-content: center;
+                text-align: left;
+                flex-direction: column;
+                align-items: start;
+            }
+        }
     </style>
 </head>
 
@@ -197,15 +226,15 @@
             <div class="col-md-2"></div>
             <div class="col-md-2 col-sm-12">
                 <div class="sticky-md-top">
-                    <img src="content/bio/profile.jpg" class="figure-img img-fluid py-5" style="width: 80%;" alt="...">
-                    <div class="">
+                    <img src="content/bio/profile.jpg" class="figure-img img-fluid pt-5 w-full-sm w-80-md" alt="...">
+                    <div class="mt-4 left-md center-sm">
                         <h6 class="mb-n1" style="font-size:x-small;">Mòo-Zhéh
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wóo</h6>
                         <h2 class="mb-n0">Muzhe Wu</h2>
                         <h5>
                             Student / Researcher
                         </h5>
-                        <h6 class="mt-4">
+                        <h6 class="mt-3">
                             <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled"><i class="fas fa-envelope"></i>
                                 Email</a>
                         </h6>
@@ -289,11 +318,11 @@
                                 University</a>.
                         </p>
                         <p>
-                            My research interest lies in <strong>Human-Computer Interaction</strong>, <strong>Extended
-                                Reality</strong> and <strong>Learning Sciences</strong>. I am specifically
+                            My research interest lies in <strong class="bold-font">Human-Computer Interaction</strong>, <strong class="bold-font">Extended
+                                Reality</strong> and <strong class="bold-font">Learning Sciences</strong>. I am specifically
                             keen on
-                            <strong>"understanding and creating learnable beyond-real interaction techniques &
-                                experiences with emergent technologies (e.g., XR, AI)"</strong>.
+                            <strong class="bold-font">creating and understanding learnable beyond-real interaction techniques &
+                                experiences with emergent technologies (e.g., XR, AI)</strong>.
                             Towards this goal, I am working with
                             <span class="cmu"><a href="https://www.davidlindlbauer.com/">
                                     Prof.
@@ -459,9 +488,12 @@
                                 </div>
                             </div>
                             <div class="col-8">
-                                <h5>ActiveAI: The Effectiveness of an Interactive Tutoring System in Developing K-12 AI Literacy
+                                <h5>ActiveAI: The Effectiveness of an Interactive Tutoring System in Developing K-12 AI
+                                    Literacy
                                 </h5>
-                                <h6 class="text-muted">Ying-Jui Tseng, Gautam Yadav, Xinying Hou, <u>Muzhe Wu</u>, Yun-Shuo Chou, Claire Che Chen, Chia-Chia Wu, Shi-Gang Chen, Yi-Jo Lin, Guanze Liao, and Kenneth R. Koedinger</h6>
+                                <h6 class="text-muted">Ying-Jui Tseng, Gautam Yadav, Xinying Hou, <u>Muzhe Wu</u>,
+                                    Yun-Shuo Chou, Claire Che Chen, Chia-Chia Wu, Shi-Gang Chen, Yi-Jo Lin, Guanze Liao,
+                                    and Kenneth R. Koedinger</h6>
                                 <h6><em>To Appear at ECTEL 2024</em></h6>
                                 <div class="my-2">
                                     <!-- <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
@@ -511,7 +543,8 @@
                                     Guo,
                                     Xu
                                     Wang</h6>
-                                <h6><em>Michigan AI Symposium 2023</em> (Best Demo <i class="fa fa-trophy" aria-hidden="true"></i>)</h6>
+                                <h6><em>Michigan AI Symposium 2023</em> (Best Demo <i class="fa fa-trophy"
+                                        aria-hidden="true"></i>)</h6>
                                 <!-- <h6><em>Submitted to the 36th Annual ACM
                                         Symposium on User Interface Software and Technology (UIST '23)</em></h6> -->
                                 <div class="my-2">
