@@ -61,16 +61,15 @@
             color: #C41230;
         }
 
-        .normal a:link,
-        .normal a:visited,
-        .normal a:active {
+        a:link,
+        a:visited,
+        a:active {
             text-decoration: none;
             color: #000000;
         }
 
-        .normal a:hover {
-            text-decoration: none;
-            color: #6D6E71;
+        a:hover {
+            text-decoration: underline;
         }
 
         .umich a:link,
@@ -182,10 +181,12 @@
             align-items: center;
             flex-direction: column;
         }
+
         @media (min-width: 768px) {
             .w-80-md {
                 width: 80%;
             }
+
             .left-md {
                 display: flex;
                 justify-content: center;
@@ -318,8 +319,10 @@
                                 University</a>.
                         </p>
                         <p>
-                            My research interest lies in <strong class="bold-font">Human-Computer Interaction</strong>, <strong class="bold-font">Extended
-                                Reality</strong> and <strong class="bold-font">Learning Sciences</strong>. I am specifically
+                            My research interest lies in <strong class="bold-font">Human-Computer Interaction</strong>,
+                            <strong class="bold-font">Extended
+                                Reality</strong> and <strong class="bold-font">Learning Sciences</strong>. I am
+                            specifically
                             keen on
                             <strong class="bold-font">understanding and creating beyond-real interaction techniques &
                                 experiences with emergent technologies (e.g., XR, AI) that empower people</strong>.
@@ -346,8 +349,7 @@
                             agents. -->
                         </p>
                     </div>
-                    <br />
-                    <div id="education">
+                    <div id="education" class="mt-5">
                         <h2>Education</h2>
                         <ul class="list-unstyled">
                             <li class="d-flex my-3 align-items-center">
@@ -429,10 +431,57 @@
                             </li>
                         </ul>
                     </div>
-                    <br />
-                    <br />
-                    <div id="research">
+                    <div id="research" class="mt-5">
                         <h2>Research Projects</h2>
+
+                        <div class="row my-3">
+                            <div class="col-4">
+                                <div class="mx-2">
+                                    <img src="content/research/AgencyPerformance/teaser.png"
+                                        class="figure-img img-fluid  " alt="...">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5>Towards Understanding the Trade-off between Sense of Agency and Performance in
+                                    Assisted Target Selection in Virtual Reality
+                                </h5>
+                                <h6 class="text-muted"><u>Muzhe Wu</u>, Byungjoo Lee, David Lindlbauer</h6>
+                                <!-- <h6><em>Available Soon</a></em></h6> -->
+                                <div class="my-2">
+                                    <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#agency-performance-abs" aria-expanded="false"
+                                        aria-controls="collapseExample"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a>
+                                    <!-- <a href="content/research/Rubikon/RubikonUIST23.pdf" class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
+                                    <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a> -->
+                                </div>
+                                <div class="collapse my-2" id="agency-performance-abs">
+                                    <div class="card card-body">
+                                        Virtual Reality (VR) systems enable immersive experiences while providing users
+                                        with efficient interaction techniques for tasks such as selection or
+                                        manipulation.
+                                        With the increased integration of AI-powered intelligent assistants, these
+                                        interaction techniques continue to improve users' performance by anticipating
+                                        their goals and actions.
+                                        It is yet unclear, however, if such advanced interaction techniques negatively
+                                        influence users' sense of agency.
+                                        We explore this trade-off through a user study (N=12) on target selection tasks
+                                        while varying the levels of assistance and task difficulty.
+                                        We measured the sense of agency with the intentional binding paradigm and
+                                        questionnaire, and compared this data with quantitative performance metrics.
+                                        Our results reveal that while a higher level of assistance improved performance,
+                                        the sense of agency remained stable in difficult task settings and increased in
+                                        easy task settings, which might be due to participants becoming more proactive
+                                        and attentive under high-assistance conditions.
+                                        We provide guidelines for future intelligent interaction techniques that aim to
+                                        balance performance with the sense of agency.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row my-3">
                             <div class="col-4">
                                 <div class="mx-2">
@@ -445,40 +494,153 @@
                                     Performing Search in a Virtual Reality Environment
                                 </h5>
                                 <h6 class="text-muted"><u>Muzhe Wu</u>*, Yi-Fei Cheng*, David Lindlbauer</h6>
-                                <h6><em>To Appear at IEEE ISMAR 2024</em></h6>
+                                <h6><em>To Appear at <a href="https://ieeeismar.org/" target="_blank">IEEE ISMAR 2024</a></em></h6>
                                 <div class="my-2">
-                                    <!-- <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#RubikonAbstract" aria-expanded="false"
+                                    <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#new-ears-abs" aria-expanded="false"
                                         aria-controls="collapseExample"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a> -->
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a>
                                     <!-- <a href="content/research/Rubikon/RubikonUIST23.pdf" class="btn btn-outline-dark"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
                                     <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a> -->
                                 </div>
-                                <!-- <div class="collapse my-2" id="RubikonAbstract">
+                                <div class="collapse my-2" id="new-ears-abs">
                                     <div class="card card-body">
-                                        Learning to solve a Rubik's Cube requires the learners to repeatedly
-                                        practice a skill component, e.g., identifying a misplaced square and
-                                        putting it back in place. However, for 3D physical tasks such as the
-                                        Rubik's Cube, generating sufficient repeated practice opportunities
-                                        for learners can be challenging, in part because repeated configuration
-                                        of physical objects is hard and strenuous.We propose Rubikon,
-                                        an intelligent tutoring system for learning to solve the Rubik's Cube.
-                                        Rubikon reduces the necessity for repeated manual configurations
-                                        of the Rubik's Cube without compromising the tactile experience
-                                        of handling a physical cube. The foundational design of Rubikon
-                                        is an AR setup, where learners manipulate a physical cube while
-                                        seeing an AR-rendered cube on the screen. This allows Rubikon to
-                                        automatically generate configurations of the Rubik's Cube to target
-                                        learners' weaknesses and help them exercise diverse knowledge
-                                        components. A between-subjects experiment showed that learners
-                                        who used Rubikon scored 25% higher on a post-test to solve the
-                                        Rubik's Cube compared to baselines.
+                                        Efficiently searching and navigating virtual scenes is essential for
+                                        performing various downstream tasks and ensuring a positive user
+                                        experience in VR. Prior VR interaction techniques for such scenarios
+                                        predominantly rely on users' visual perception, which contrasts
+                                        with physical reality, where people typically rely on multimodal
+                                        information, especially auditory cues, to guide their spatial awareness.
+                                        In this work, we explore the potential of leveraging auditory
+                                        interaction techniques to enhance spatial navigation in virtual
+                                        environments. We drew inspiration from prior distant interaction
+                                        techniques and developed four approaches to augmenting how users
+                                        hear in the virtual environment: Audio Teleportation, Audio Cone,
+                                        Ninja Ears, and Boom Mic. In a comparative user study (N = 25),
+                                        we evaluated these approaches against a baseline teleportation technique
+                                        in a search task, where participants traversed a virtual environment
+                                        to locate target items. Our results suggest that several of
+                                        our audio interaction techniques may enable more efficient search
+                                        behaviors while enhancing overall user experience. However, not
+                                        all techniques were appreciated equally, suggesting that careful attention
+                                        to their design is critical for ensuring their effectiveness. We
+                                        conclude by discussing the potential implications of our results for
+                                        future audio interaction technique designs.
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
+
+                        <div class="row my-3">
+                            <div class="col-4">
+                                <div class="mx-2">
+                                    <img src="content/research/Rubikon/teaser.png" class="figure-img img-fluid  "
+                                        alt="...">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5>AR-Based Intelligent Tutoring for Physical Task Learning
+                                </h5>
+                                <h6 class="text-muted"><u>Muzhe Wu</u>*, Haocheng Ren*, Gregory Croisdale, Anhong
+                                    Guo,
+                                    Xu
+                                    Wang</h6>
+                                <h6><em>Michigan AI Symposium 2022</em> (Best Demo <i class="fa fa-trophy"
+                                        aria-hidden="true"></i>)</h6>
+                                <!-- <h6><em>Available Soon</em></h6> -->
+                                <!-- <h6><em>Submitted to the 36th Annual ACM
+                                        Symposium on User Interface Software and Technology (UIST '23)</em></h6> -->
+                                <div class="my-2">
+                                    <!-- <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#rubikon-abs" aria-expanded="false"
+                                        aria-controls="collapseExample"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a> -->
+                                    <!-- <a href="https://drive.google.com/file/d/1hV7FDr8uGNrk1YKQwD4b7iGWNTcmjfBV/view?usp=drive_link"
+                                        class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
+                                    <a href="https://drive.google.com/file/d/12plUj5x8MXdekkbQlaqLDGqM7jnwyEo6/view?usp=sharing"
+                                        class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Video</a> -->
+                                    <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a>
+                                </div>
+                                <div class="collapse my-2" id="rubikon-abs">
+                                    <div class="card card-body">
+                                        Learning to solve a Rubik's Cube requires the learners to repeatedly practice a
+                                        skill component, e.g., identifying a misplaced square
+                                        and putting it back. However, for 3D physical tasks such as the Rubik's Cube,
+                                        generating sufficient repeated practice opportunities
+                                        for learners can be challenging, in part because repeated configuration of
+                                        physical objects is strenuous. We propose Rubikon, an
+                                        intelligent tutoring system for learning to solve the Rubik's Cube. Rubikon
+                                        reduces the necessity for repeated manual configurations
+                                        of the Rubik's Cube without compromising the tactile experience of handling a
+                                        physical cube. The foundational design of Rubikon is
+                                        an AR setup, where learners manipulate a physical cube while seeing an
+                                        AR-rendered cube on the screen. Rubikon automatically
+                                        generates configurations of the Rubik's Cube to target learners' weaknesses and
+                                        help them exercise diverse knowledge components. A
+                                        between-subjects experiment showed that Rubikon learners scored 25% higher on a
+                                        post-test compared to baselines.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row my-3">
+                            <div class="col-4">
+                                <div class="mx-2">
+                                    <img src="content/research/AILego/teaser.png" class="figure-img img-fluid  "
+                                        alt="...">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5>Early-Stage Risk Identification in Responsible AI
+                                </h5>
+                                <h6 class="text-muted"><u>Muzhe Wu</u>*, Yanzhi Zhao*, Shuyi Han, Michael Xieyang Liu,
+                                    Hong Shen</h6>
+                                <!-- <h6><em>Available Soon</em></h6> -->
+                                <!-- <h6><em>Submitted to the 36th Annual ACM
+                                        Symposium on User Interface Software and Technology (UIST '23)</em></h6> -->
+                                <div class="my-2">
+                                    <!-- <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#ai-lego-abs" aria-expanded="false"
+                                        aria-controls="collapseExample"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a> -->
+                                    <!-- <a href="https://drive.google.com/file/d/1hV7FDr8uGNrk1YKQwD4b7iGWNTcmjfBV/view?usp=drive_link"
+                                        class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
+                                    <a href="https://drive.google.com/file/d/12plUj5x8MXdekkbQlaqLDGqM7jnwyEo6/view?usp=sharing"
+                                        class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Video</a> -->
+                                    <a href="https://ai-lego.vercel.app/" target="_blank" class="btn btn-outline-dark"
+                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Website</a>
+                                </div>
+                                <div class="collapse my-2" id="ai-lego-abs">
+                                    <div class="card card-body">
+                                        <!-- Learning to solve a Rubik's Cube requires the learners to repeatedly practice a
+                                        skill component, e.g., identifying a misplaced square
+                                        and putting it back. However, for 3D physical tasks such as the Rubik's Cube,
+                                        generating sufficient repeated practice opportunities
+                                        for learners can be challenging, in part because repeated configuration of
+                                        physical objects is strenuous. We propose Rubikon, an
+                                        intelligent tutoring system for learning to solve the Rubik's Cube. Rubikon
+                                        reduces the necessity for repeated manual configurations
+                                        of the Rubik's Cube without compromising the tactile experience of handling a
+                                        physical cube. The foundational design of Rubikon is
+                                        an AR setup, where learners manipulate a physical cube while seeing an
+                                        AR-rendered cube on the screen. Rubikon automatically
+                                        generates configurations of the Rubik's Cube to target learners' weaknesses and
+                                        help them exercise diverse knowledge components. A
+                                        between-subjects experiment showed that Rubikon learners scored 25% higher on a
+                                        post-test compared to baselines. -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row my-3">
                             <div class="col-4">
                                 <div class="mx-2">
@@ -493,99 +655,40 @@
                                 <h6 class="text-muted">Ying-Jui Tseng, Gautam Yadav, Xinying Hou, <u>Muzhe Wu</u>,
                                     Yun-Shuo Chou, Claire Che Chen, Chia-Chia Wu, Shi-Gang Chen, Yi-Jo Lin, Guanze Liao,
                                     and Kenneth R. Koedinger</h6>
-                                <h6><em>To Appear at ECTEL 2024</em></h6>
-                                <div class="my-2">
-                                    <!-- <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#RubikonAbstract" aria-expanded="false"
-                                        aria-controls="collapseExample"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a> -->
-                                    <!-- <a href="content/research/Rubikon/RubikonUIST23.pdf" class="btn btn-outline-dark"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
-                                    <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a> -->
-                                </div>
-                                <!-- <div class="collapse my-2" id="RubikonAbstract">
-                                    <div class="card card-body">
-                                        Learning to solve a Rubik's Cube requires the learners to repeatedly
-                                        practice a skill component, e.g., identifying a misplaced square and
-                                        putting it back in place. However, for 3D physical tasks such as the
-                                        Rubik's Cube, generating sufficient repeated practice opportunities
-                                        for learners can be challenging, in part because repeated configuration
-                                        of physical objects is hard and strenuous.We propose Rubikon,
-                                        an intelligent tutoring system for learning to solve the Rubik's Cube.
-                                        Rubikon reduces the necessity for repeated manual configurations
-                                        of the Rubik's Cube without compromising the tactile experience
-                                        of handling a physical cube. The foundational design of Rubikon
-                                        is an AR setup, where learners manipulate a physical cube while
-                                        seeing an AR-rendered cube on the screen. This allows Rubikon to
-                                        automatically generate configurations of the Rubik's Cube to target
-                                        learners' weaknesses and help them exercise diverse knowledge
-                                        components. A between-subjects experiment showed that learners
-                                        who used Rubikon scored 25% higher on a post-test to solve the
-                                        Rubik's Cube compared to baselines.
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                        <div class="row my-3">
-                            <div class="col-4">
-                                <div class="mx-2">
-                                    <img src="content/research/Rubikon/teaser.png" class="figure-img img-fluid  "
-                                        alt="...">
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <h5>Rubikon: Intelligent Tutoring for Rubik’s Cube Learning Through AR-enabled
-                                    Physical Task Reconfiguration
-                                </h5>
-                                <h6 class="text-muted"><u>Muzhe Wu</u>*, Haocheng Ren*, Gregory Croisdale, Anhong
-                                    Guo,
-                                    Xu
-                                    Wang</h6>
-                                <h6><em>Michigan AI Symposium 2022</em> (Best Demo <i class="fa fa-trophy"
-                                        aria-hidden="true"></i>)</h6>
-                                <h6><em>In Submission</em></h6>
-                                <!-- <h6><em>Submitted to the 36th Annual ACM
-                                        Symposium on User Interface Software and Technology (UIST '23)</em></h6> -->
+                                <h6><em><a href="https://ea-tel.eu/ectel2024" target="_blank">ECTEL 2024</a></em></h6>
                                 <div class="my-2">
                                     <a class="btn btn-dark" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#RubikonAbstract" aria-expanded="false"
+                                        data-bs-target="#active-ai-abs" aria-expanded="false"
                                         aria-controls="collapseExample"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Abstract</a>
-                                    <!-- <a href="https://drive.google.com/file/d/1hV7FDr8uGNrk1YKQwD4b7iGWNTcmjfBV/view?usp=drive_link"
-                                        class="btn btn-outline-dark"
+                                    <a href="https://doi.org/10.1007/978-3-031-72315-5_31" class="btn btn-outline-dark"
                                         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Paper</a>
-                                    <a href="https://drive.google.com/file/d/12plUj5x8MXdekkbQlaqLDGqM7jnwyEo6/view?usp=sharing"
-                                        class="btn btn-outline-dark"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Video</a> -->
-                                    <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
-                                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a>
                                 </div>
-                                <div class="collapse my-2" id="RubikonAbstract">
+                                <div class="collapse my-2" id="active-ai-abs">
                                     <div class="card card-body">
-                                        Learning to solve a Rubik's Cube requires the learners to repeatedly
-                                        practice a skill component, e.g., identifying a misplaced square and
-                                        putting it back in place. However, for 3D physical tasks such as the
-                                        Rubik's Cube, generating sufficient repeated practice opportunities
-                                        for learners can be challenging, in part because repeated configuration
-                                        of physical objects is hard and strenuous.We propose Rubikon,
-                                        an intelligent tutoring system for learning to solve the Rubik's Cube.
-                                        Rubikon reduces the necessity for repeated manual configurations
-                                        of the Rubik's Cube without compromising the tactile experience
-                                        of handling a physical cube. The foundational design of Rubikon
-                                        is an AR setup, where learners manipulate a physical cube while
-                                        seeing an AR-rendered cube on the screen. This allows Rubikon to
-                                        automatically generate configurations of the Rubik's Cube to target
-                                        learners' weaknesses and help them exercise diverse knowledge
-                                        components. A between-subjects experiment showed that learners
-                                        who used Rubikon scored 25% higher on a post-test to solve the
-                                        Rubik's Cube compared to baselines.
+                                        As we witness groundbreaking advancements in Artificial Intelligence (AI), it is
+                                        clear that the next generation must be equipped with AI literacy: the skill to
+                                        interact, evaluate, and collaborate with AI systems. This study introduces
+                                        ActiveAI, a scalable web-based tutoring system aligned with AI4K12's five big
+                                        ideas in AI, designed to foster AI literacy among K-12 students through active
+                                        learning and interaction with intelligent agents. A controlled classroom study
+                                        involving 171 middle school learners was conducted to assess the effectiveness
+                                        of ActiveAI in fostering AI literacy skills and competency toward AI. Results
+                                        showed that, compared to students in the tell-and-practice control condition,
+                                        students who used ActiveAI exhibited higher post-test performance in the module
+                                        about how next-word prediction and temperature work in large language models.
+                                        Students also developed higher self-reported competence toward AI after using
+                                        ActiveAI than in the control condition. We conclude by suggesting assessment
+                                        designs that promote deeper engagement with AI concepts by addressing students'
+                                        common misconceptions, like “AI thinks just like humans”, in K-12 AI literacy
+                                        education.
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <br />
-                        <div id="prototypes">
+
+
+                        <div id="prototypes" class="mt-5">
                             <h2>Prototypes</h2>
                             <div class="row my-3">
                                 <div class="col-4">
@@ -694,8 +797,7 @@
                             </div>
                         </div> -->
                         </div>
-                        <br />
-                        <div id="projects">
+                        <div id="projects" class="mt-5">
                             <h2>Other Projects</h2>
                             <div class="row my-3">
                                 <div class="col-4">
@@ -715,8 +817,7 @@
                                         to employee dissatisfaction and antiwork sentiments.</h7>
                                     <!-- <h6><em>Submitted to EMNLP 2023</em></h6> -->
                                     <div class="my-2">
-                                        <a href="https://arxiv.org/abs/2408.13473"
-                                            class="btn btn-outline-dark"
+                                        <a href="https://arxiv.org/abs/2408.13473" class="btn btn-outline-dark"
                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Arxiv</a>
                                         <!-- <a href="content/research/Rubikon/poster.pdf" class="btn btn-outline-dark"
                                     style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Poster</a>
@@ -853,8 +954,7 @@
                                 </div>
                             </div>
                         </div>
-                        <br />
-                        <div id="awards">
+                        <div id="awards" class="mt-5">
                             <h2>Honors & Awards</h2>
                             <ul class="list-unstyled">
                                 <div class="flex-grow-1">
