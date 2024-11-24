@@ -2,6 +2,6 @@
 ~~~
 hugo -d docs
 git add docs
-git commit -m "updated video loading"
+git commit -m "MESSAGE"
 git push origin master
 ~~~
