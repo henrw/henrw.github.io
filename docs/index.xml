@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to My Website on Muzhe Wu</title>
+    <link>https://wumuzhe.com/</link>
+    <description>Recent content in Welcome to My Website on Muzhe Wu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wumuzhe.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UIST/ISMAR</title>
+      <link>https://wumuzhe.com/news/2024-10-14/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2024-10-14/</guid>
+      <description>Had a wonderful two weeks attending UIST and ISMAR and presenting our work New Ears.</description>
+    </item>
+    <item>
+      <title>Performance as Agency? Investigating the Trade-off between Sense of Agency and Performance in Target Selection with Preemptive Assistance in VR</title>
+      <link>https://wumuzhe.com/research/agencyperformance/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/research/agencyperformance/</guid>
+      <description>&lt;p&gt;Virtual Reality (VR) systems enable immersive experiences while providing users with efficient interaction techniques for tasks such as selection or manipulation. With the increased integration of AI-powered intelligent assistants, these interaction techniques continue to improve users&amp;rsquo; performance by anticipating their goals and actions.&lt;/p&gt;&#xA;&lt;p&gt;However, it is yet unclear if such advanced interaction techniques negatively influence users&amp;rsquo; sense of agency. This research explores this trade-off through a user study on target selection tasks, varying levels of assistance and task difficulty. The results reveal how assistance affects both performance and the sense of agency, offering guidelines for future intelligent interaction techniques.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PhD Program Application</title>
+      <link>https://wumuzhe.com/news/phd-application/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/phd-application/</guid>
+      <description>I&amp;rsquo;m applying to PhD programs this cycle (Fall 2025) and would love to chat if there are any opportunities!</description>
+    </item>
+    <item>
+      <title>&#34;Collaborative Early-stage Risk Identification in AI Product Design&#34;</title>
+      <link>https://wumuzhe.com/research/ailego/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/research/ailego/</guid>
+      <description>&lt;p&gt;Existing Responsible AI (RAI) tools often depend on technical experts to identify harmful problems and are used after the system is built. However, there is growing recognition of the importance of cross-functional collaboration in RAI work during the early design stage. We introduce AI LEGO, a novel interactive tool designed to enhance RAI cross-functional collaboration by helping practitioners communicate and identify harmful design choices early, when problems are easier to address and less likely to cause harm. Through a co-design study with 8 cross-functional AI practitioners and a user study with 18 practitioners, we found that AI LEGO improves practitioners’ ability to identify potential harms in AI designs.  Participants’ feedback also highlights AI LEGO’s effectiveness in facilitating early-stage harm identification across different roles. Finally, we discuss implications for supporting cross-functional collaboration in conducting RAI work in early-stage AI design.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UIST/ISMAR</title>
+      <link>https://wumuzhe.com/news/2024-07-30/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2024-07-30/</guid>
+      <description>Finished my master&amp;rsquo;s program at CMU HCII.</description>
+    </item>
+    <item>
+      <title>&#34;AR-enabled Intelligent Tutoring for Rubik’s Cube Learning&#34;</title>
+      <link>https://wumuzhe.com/research/rubikon/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/research/rubikon/</guid>
+      <description>&lt;p&gt;Learning to solve a Rubik&amp;rsquo;s Cube requires the learners to repeatedly practice a&#xA;skill component, e.g., identifying a misplaced square&#xA;and putting it back. However, for 3D physical tasks such as the Rubik&amp;rsquo;s Cube,&#xA;generating sufficient repeated practice opportunities&#xA;for learners can be challenging, in part because repeated configuration of&#xA;physical objects is strenuous. We propose Rubikon, an&#xA;intelligent tutoring system for learning to solve the Rubik&amp;rsquo;s Cube. Rubikon&#xA;reduces the necessity for repeated manual configurations&#xA;of the Rubik&amp;rsquo;s Cube without compromising the tactile experience of handling a&#xA;physical cube. The foundational design of Rubikon is&#xA;an AR setup, where learners manipulate a physical cube while seeing an&#xA;AR-rendered cube on the screen. Rubikon automatically&#xA;generates configurations of the Rubik&amp;rsquo;s Cube to target learners&amp;rsquo; weaknesses and&#xA;help them exercise diverse knowledge components. A&#xA;between-subjects experiment showed that Rubikon learners scored 25% higher on a&#xA;post-test compared to baselines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Ears: An Exploratory Study of Audio Interaction Techniques for Performing Search in a Virtual Reality Environment</title>
+      <link>https://wumuzhe.com/research/newears/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/research/newears/</guid>
+      <description>&lt;p&gt;Efficiently searching and navigating virtual scenes is essential for performing various downstream tasks and ensuring a positive user experience in VR. Prior VR interaction techniques for such scenarios predominantly rely on users’ visual perception, which contrasts with physical reality, where people typically rely on multimodal information, especially auditory cues, to guide their spatial awareness. In this work, we explore the potential of leveraging auditory interaction techniques to enhance spatial navigation in virtualenvironments. We drew inspiration from prior distant interaction techniques and developed four approaches to augmenting how users hear in the virtual environment: Audio Teleportation, Audio Cone, Ninja Ears, and Boom Mic. In a comparative user study (N = 25), we evaluated these approaches against a baseline teleportation technique in a search task, where participants traversed a virtual environment to locate target items. Our results suggest that several ofour audio interaction techniques may enable more efficient search behaviors while enhancing overall user experience. However, not all techniques were appreciated equally, suggesting that careful attention to their design is critical for ensuring their effectiveness. We conclude by discussing the potential implications of our results for future audio interaction technique designs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mini-World: Prototyping the sense of co-presence in web browsing</title>
+      <link>https://wumuzhe.com/projects/miniworld/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/miniworld/</guid>
+      <description>&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wiki-Learn: Prototyping LLM-enhanced wikipedia learning experience</title>
+      <link>https://wumuzhe.com/projects/wikilearn/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/wikilearn/</guid>
+      <description>&lt;p&gt;Enhance informal learning on Wikipedia with LLM-based instruction and assessment generation with Chrome Extension.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prototyping Goal Tracking Experience with Personification and Fading</title>
+      <link>https://wumuzhe.com/projects/xrgoaltracker/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/xrgoaltracker/</guid>
+      <description>&lt;p&gt;Prototype immersive XR goal tracking experience exploring concepts of personification and fading.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ActiveAI: The Effectiveness of an Interactive Tutoring System in Developing K-12 AI Literacy</title>
+      <link>https://wumuzhe.com/research/activeai/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/research/activeai/</guid>
+      <description>&lt;p&gt;As we witness groundbreaking advancements in Artificial Intelligence (AI), it is clear that the next generation must be equipped with AI literacy: the skill to interact, evaluate, and collaborate with AI systems. This study introduces ActiveAI, a scalable web-based tutoring system aligned with AI4K12’s five big ideas in AI, designed to foster AI literacy among K-12 students through active learning and interaction with intelligent agents. A controlled classroom study involving 171 mid- dle school learners was conducted to assess the effectiveness of ActiveAI in fostering AI literacy skills and competency toward AI. Results showed that, compared to students in the tell-and-practice control condition, stu- dents who used ActiveAI exhibited higher post-test performance in the module about how next-word prediction and temperature work in large language models. Students also developed higher self-reported compe- tence toward AI after using ActiveAI than in the control condition. We conclude by suggesting assessment designs that promote deeper engage- ment with AI concepts by addressing students’ common misconceptions, like “AI thinks just like humans”, in K-12 AI literacy education.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How Do You See The World: Visual Impairment Education in VR</title>
+      <link>https://wumuzhe.com/projects/howtoseetheworld/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/howtoseetheworld/</guid>
+      <description>&lt;p&gt;Simulate visual impairments in VR environments to educate people about these conditions and increase awareness.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Towards Addressing Spurious Correlation: Auxiliary Variables Improve Group Accuracy without Group Information</title>
+      <link>https://wumuzhe.com/projects/spuriouscorrelation/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/spuriouscorrelation/</guid>
+      <description>&lt;p&gt;Validate the effectiveness of auxiliary variables in the first stage of the JTT/BAM algorithm resolving the spurious correlation problem with fine-grained datasets.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why Antiwork: A RoBERTa-Based System for Work-Related Stress Identification and Leading Factor Analysis</title>
+      <link>https://wumuzhe.com/projects/whyantiwork/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/whyantiwork/</guid>
+      <description>&lt;p&gt;Enhance informal learning on Wikipedia with LLM-based instruction and assessment generation with Chrome Extension.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Feature Alignment Discriminator for Text Summarization</title>
+      <link>https://wumuzhe.com/projects/fad/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/fad/</guid>
+      <description>&lt;p&gt;Building block useful in the fine-tuning process for text generators like BART, which addresses problems of discreteness in adversarial learning for NLP, better captures the word distribution, and achieves SOTA ROUGE score of abstractive text summarization in DailyMail/CNN dataset.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mask Redistribution Simulator</title>
+      <link>https://wumuzhe.com/projects/maskredistribution/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/maskredistribution/</guid>
+      <description>&lt;p&gt;C++ program that simulates the distribution of masks among the cities with a certain mask production capacity during the COVID-19 pandemic.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Other Stuff I Made</title>
+      <link>https://wumuzhe.com/projects/other/</link>
+      <pubDate>Wed, 22 Aug 2001 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/other/</guid>
+      <description>&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

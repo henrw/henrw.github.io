@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Muzhe Wu</title>
+    <link>https://wumuzhe.com/projects/</link>
+    <description>Recent content in Projects on Muzhe Wu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wumuzhe.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mini-World: Prototyping the sense of co-presence in web browsing</title>
+      <link>https://wumuzhe.com/projects/miniworld/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/miniworld/</guid>
+      <description>&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wiki-Learn: Prototyping LLM-enhanced wikipedia learning experience</title>
+      <link>https://wumuzhe.com/projects/wikilearn/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/wikilearn/</guid>
+      <description>&lt;p&gt;Enhance informal learning on Wikipedia with LLM-based instruction and assessment generation with Chrome Extension.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prototyping Goal Tracking Experience with Personification and Fading</title>
+      <link>https://wumuzhe.com/projects/xrgoaltracker/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/xrgoaltracker/</guid>
+      <description>&lt;p&gt;Prototype immersive XR goal tracking experience exploring concepts of personification and fading.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How Do You See The World: Visual Impairment Education in VR</title>
+      <link>https://wumuzhe.com/projects/howtoseetheworld/</link>
+      <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/howtoseetheworld/</guid>
+      <description>&lt;p&gt;Simulate visual impairments in VR environments to educate people about these conditions and increase awareness.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Towards Addressing Spurious Correlation: Auxiliary Variables Improve Group Accuracy without Group Information</title>
+      <link>https://wumuzhe.com/projects/spuriouscorrelation/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/spuriouscorrelation/</guid>
+      <description>&lt;p&gt;Validate the effectiveness of auxiliary variables in the first stage of the JTT/BAM algorithm resolving the spurious correlation problem with fine-grained datasets.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why Antiwork: A RoBERTa-Based System for Work-Related Stress Identification and Leading Factor Analysis</title>
+      <link>https://wumuzhe.com/projects/whyantiwork/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/whyantiwork/</guid>
+      <description>&lt;p&gt;Enhance informal learning on Wikipedia with LLM-based instruction and assessment generation with Chrome Extension.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Feature Alignment Discriminator for Text Summarization</title>
+      <link>https://wumuzhe.com/projects/fad/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/fad/</guid>
+      <description>&lt;p&gt;Building block useful in the fine-tuning process for text generators like BART, which addresses problems of discreteness in adversarial learning for NLP, better captures the word distribution, and achieves SOTA ROUGE score of abstractive text summarization in DailyMail/CNN dataset.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mask Redistribution Simulator</title>
+      <link>https://wumuzhe.com/projects/maskredistribution/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/maskredistribution/</guid>
+      <description>&lt;p&gt;C++ program that simulates the distribution of masks among the cities with a certain mask production capacity during the COVID-19 pandemic.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Other Stuff I Made</title>
+      <link>https://wumuzhe.com/projects/other/</link>
+      <pubDate>Wed, 22 Aug 2001 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/projects/other/</guid>
+      <description>&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
