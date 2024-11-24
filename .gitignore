@@ -1,0 +1,41 @@
+# Hugo build output directories
+/resources/_gen/
+
+# Hugo temporary files
+hugo_stats.json
+
+# Generated files for deployment
+/deploy/
+
+# Netlify build cache (if deploying to Netlify)
+/.netlify/
+
+# VSCode and other editor-specific files
+.vscode/
+.idea/
+
+# Node.js dependencies (if using npm or yarn)
+/node_modules/
+/package-lock.json
+/yarn.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*~
+
+layouts
+public
+static
+themes
+data
+assets
+archetypes
+i18n
+content
