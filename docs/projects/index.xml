@@ -9,21 +9,21 @@
     <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wumuzhe.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mini-World: Prototyping the sense of co-presence in web browsing</title>
+      <title>Mini-World: Sense of Co-presence in Web Browsing</title>
       <link>https://wumuzhe.com/projects/miniworld/</link>
       <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/projects/miniworld/</guid>
       <description>&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Wiki-Learn: Prototyping LLM-enhanced wikipedia learning experience</title>
+      <title>LLM-enhanced Casual Learning Experience on Wikipedia</title>
       <link>https://wumuzhe.com/projects/wikilearn/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/projects/wikilearn/</guid>
       <description>&lt;p&gt;Enhance informal learning on Wikipedia with LLM-based instruction and assessment generation with Chrome Extension.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Prototyping Goal Tracking Experience with Personification and Fading</title>
+      <title>Personified Goal Tracking Experience with Decreasing Obtrusiveness</title>
       <link>https://wumuzhe.com/projects/xrgoaltracker/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/projects/xrgoaltracker/</guid>
@@ -37,18 +37,18 @@
       <description>&lt;p&gt;Simulate visual impairments in VR environments to educate people about these conditions and increase awareness.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Towards Addressing Spurious Correlation: Auxiliary Variables Improve Group Accuracy without Group Information</title>
+      <title>Auxiliary Variables Improve Group Accuracy without Group Information</title>
       <link>https://wumuzhe.com/projects/spuriouscorrelation/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/projects/spuriouscorrelation/</guid>
       <description>&lt;p&gt;Validate the effectiveness of auxiliary variables in the first stage of the JTT/BAM algorithm resolving the spurious correlation problem with fine-grained datasets.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Why Antiwork: A RoBERTa-Based System for Work-Related Stress Identification and Leading Factor Analysis</title>
+      <title>Why Antiwork: Work-Related Stress Identification and Leading Factor Analysis</title>
       <link>https://wumuzhe.com/projects/whyantiwork/</link>
       <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/projects/whyantiwork/</guid>
-      <description>&lt;p&gt;Enhance informal learning on Wikipedia with LLM-based instruction and assessment generation with Chrome Extension.&lt;/p&gt;&#xA;&lt;p&gt;More details coming soon&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Harsh working environments and work-related stress have been known to contribute to mental health problems such as anxiety, depression, and suicidal ideation. As such, it is paramount to create solutions that can both detect employee unhappiness and find the root cause of the problem. While prior works have examined causes of mental health using machine learning, they typically focus on general mental health analysis, with few of them focusing on explainable solutions or looking at the workplace-specific setting. r/antiwork is a subreddit for the antiwork movement, which is the desire to stop working altogether. Using this subreddit as a proxy for work environment dissatisfaction, we create a new dataset for antiwork sentiment detection and subsequently train a model that highlights the words with antiwork sentiments. Following this, we performed a qualitative and quantitative analysis to uncover some of the key insights into the mindset of individuals who identify with the antiwork movement and how their working environments influenced them. We find that working environments that do not give employees authority or responsibility, frustrating recruiting experiences, and unfair compensation, are some of the leading causes of the antiwork sentiment, resulting in a lack of self-confidence and motivation among their employees.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Feature Alignment Discriminator for Text Summarization</title>
