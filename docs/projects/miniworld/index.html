@@ -17,15 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
-    
     <script defer src="/js/all.min.js"></script>
     
+    
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
@@ -44,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#news">news</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#research">research</a>
+                    <a class="nav-link" href="/#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#projects">projects</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">cv</a>
+                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">CV</a>
                 </li>
             </ul>
         </div>
@@ -63,30 +66,76 @@
     
 <div class="container">
     <div class="row">
-            <h2 class="mb-3">Mini-World: Sense of Co-presence in Web Browsing</h1>
+            <h2 class="mb-3">Mini-World: Ambient Co-presence in Web Browsing</h1>
             
             
 
             
+                <p class="text-muted styled-link" style="text-decoration: none;">
+                    <em style="text-decoration: none;">CMU 05-685 Prototyping Algorithmic Experiences Individual Project</em>
+                    
+                        (2024)
+                    
+                </p>
+            
+
             
             
-            <img src="/images/projects/MiniWorld/teaser.png" class="img-fluid my-3" alt="Mini-World: Sense of Co-presence in Web Browsing">
             
 
             <div class="content">
-                <p>More details coming soon&hellip;</p>
+                <div style="display: block; text-align: center;" class="pt-2">
+    <video muted autoplay loop playsinline style="width: 80%; height: auto; object-fit: cover;">
+        <source src="/images/projects/MiniWorld/teaser.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<h3 id="overview">Overview</h3>
+<p><strong>Ambient co-presence</strong> is the feeling of sharing a space or context with others without directly interacting or constantly communicating. In physical settings, peripheral vision, ambient noise, and embodied sensations help us remain aware of one another—cues that are largely missing in digital environments. This project explores how to recreate ambient co-presence during everyday web browsing. I focused specifically on <strong>avatars</strong>—digital representations of ourselves—and their potential to heighten the sense of shared presence. Existing tools (e.g., Google Docs) already show simple “head icons,” but these are often limited to small interface elements. In this project, I delved into the advantages and challenges of potentially trancending this boundary, anchoring avatars on the users&rsquo; cursor in the browsing experience.</p>
+<h3 id="method">Method</h3>
+<p>I developed a simple pipeline (shown below) that lets users create personalized avatars through the Meta Quest App and host them on an S3 server (with consent). A Chrome Extension then renders these avatars at each user’s cursor position and synchronizes them via Firebase. People can browse the web as usual while passively sharing and seeing one another’s cursor positions. Beyond location tracking, users can enlarge their avatar to signal others.
+<figure>
+    <img 
+        src="/images/projects/MiniWorld/architecture.png" 
+        alt="Mini-world prototype achitecture" 
+        style="max-width: 100%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure></p>
+<h3 id="study">Study</h3>
+<p>As an exploratory study, four dyads of acquaintance were invited to perform one of two tasks collaboratively:</p>
+<ul>
+<li>Read an online blog article (verbal communication not allowed)</li>
+<li>Online shopping (decide whether to buy a product, with verbal communication allowed)</li>
+</ul>
+<p>Each task lasted five minutes. Afterwards, participants reconvened to discuss their experiences.
+<figure>
+    <img 
+        src="/images/projects/MiniWorld/study.png" 
+        alt="Mini-world study schema" 
+        style="max-width: 100%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure></p>
+<h3 id="insights">Insights</h3>
+<ul>
+<li>Heightened Co-Presence: Participants consistently felt a stronger sense of shared presence when seeing avatars—often likening them to familiar tools (e.g., Google Docs, Figma).</li>
+<li>Context Dependency: While avatars added fun and awareness, they were limiting in tasks requiring more nuanced interaction (e.g., reading without verbal communication). In other words, participants sought affordances beyond ambient co-presence, such as the ability to convey thoughts; when these were absent, it created additional mental load to work around the limited communication channel. Also, participants reported that seeing another person’s avatar induced an urge to match their reading or browsing pace, which can be helpful in collaborative tasks but counterproductive for individual work. Hence, future work should identify and implement the most relevant social features for specific scenarios.</li>
+<li>Avatar–World Trade-Off: One suggestion was to magnify the content instead of the avatar, highlighting the tension between directing attention to the digital “world” versus to other people. Hence, future work should fully understand how avatars, users, and environments connect, balancing task focus with mutual awareness.</li>
+<li>Usability Improvements: Participants suggested several improvements on the current prototype to be made, such as revising the color associations and offsets for better distinguishing users, additional indicators for “out of window” status, and more continuous visual cues to reduce disruption.</li>
+</ul>
 
             </div>
 
-            <div class="my-4">
+            <div class="my-2 styled-link">
                 
                 
                 
 
                 
-
+    
                 
-
+                
                 
 
                 
@@ -103,22 +152,27 @@
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled" aria-label="Email">
-                    <i class="fas fa-envelope footer-icon"></i>
+                    <i class="fa-solid fa-envelope footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin footer-icon"></i>
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://twitter.com/MuzheW" class="link-unstyled" aria-label="X">
-                    <i class="fa-brands fa-x-twitter footer-icon"></i> 
+                    <i class="fa-brands fa-x-twitter footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/henrw" class="link-unstyled" aria-label="GitHub">
-                    <i class="fab fa-github footer-icon"></i>
+                    <i class="fa-brands fa-github footer-icon"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://scholar.google.com/citations?user=M2_uuN4AAAAJ&hl=en&oi=ao" class="link-unstyled" style="color: #000000;" aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar footer-icon"></i>
                 </a>
             </li>
         </ul>

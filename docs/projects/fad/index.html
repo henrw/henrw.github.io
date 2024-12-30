@@ -17,15 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
-    
     <script defer src="/js/all.min.js"></script>
     
+    
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
@@ -44,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#news">news</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#research">research</a>
+                    <a class="nav-link" href="/#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#projects">projects</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">cv</a>
+                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">CV</a>
                 </li>
             </ul>
         </div>
@@ -68,20 +71,58 @@
             
 
             
+                <p class="text-muted styled-link" style="text-decoration: none;">
+                    <em style="text-decoration: none;">UMich EECS487 Intro to NLP Course Project</em>
+                    
+                        (2022)
+                    
+                </p>
+            
+
+            
+            <p class="text-muted styled-link" style="font-size: smaller; font-weight: 400; margin-top: -0.5em">My Role: Model implementation, Evaluation</p>
             
             
-            <img src="/images/projects/FAD/teaser.png" class="img-fluid my-3" alt="Feature Alignment Discriminator for Text Summarization">
             
 
             <div class="content">
-                <p>Building block useful in the fine-tuning process for text generators like BART, which addresses problems of discreteness in adversarial learning for NLP, better captures the word distribution, and achieves SOTA ROUGE score of abstractive text summarization in DailyMail/CNN dataset.</p>
-<p>More details coming soon&hellip;</p>
+                <figure>
+    <img 
+        src="/images/projects/FAD/teaser_large.png" 
+        alt="FAD teaser" 
+        style="max-width: 100%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure>
+<h3 id="overview">Overview</h3>
+<p><strong>Text summarization</strong> is a critical task in NLP that involves extracting the most important information from a text to create a concise version tailored to a specific purpose.
+While extractive methods select and combine existing phrases from the text, abstractive summarization generates summaries using rephrased wording based on a high-level understanding of the content. Despite its alignment with human thought processes, abstractive summarization often struggles to produce coherent and precise summaries.
+For example, state-of-the-art (SOTA) models like BART (at the time) may include irrelevant or inaccurate information, resulting in inconsistencies in the generated summaries. This project explores the use of a <strong>feature alignment discriminator (FAD)</strong> to enhance the quality of abstractive summarization.</p>
+<h3 id="dataset">Dataset</h3>
+<p>We used the <a href="https://huggingface.co/datasets/abisee/cnn_dailymail">CNN/DailyMail dataset</a>, a widely used dataset comprising over 300,000 news articles and their summaries. The data was preprocessed with GPT-2 Byte-Pair Encoding (BPE) and binarized using the GPT-2 fairseq dictionary for more meaningful word embeddings.</p>
+<h3 id="feature-alignment-discriminator">Feature Alignment Discriminator</h3>
+<p>The core of the project is the feature alignment discriminator (FAD), a BERT-based discriminator added to the sequence-to-sequence text generator in the training process.
+This method was inspired by the hidden layer features in generative adversarial networks (GAN).
+The model first takes the original text as input to the BART generator to produce a summary. It then passes the reference summary through the generator to obtain the first hidden state in the BART decoder. Some tokens in the reference summary are replaced with tokens from the generated summary. This modified reference summary is then passed to the discriminator to calculate the discriminator loss. The model is trained to minimize both the negative log-likelihood loss and the discriminator loss.</p>
+<p><strong>Rationale</strong>: The discriminator aims to rectify the word distribution of the generated summary, aligning it with the original text&rsquo;s word distribution for improved coherence. Existing models like BART, trained on negative log-likelihood loss, only focus on the probability of the correct token at each position, potentially neglecting the overall word distribution. The discriminator, using cross-entropy loss, considers the entire feature representation, encouraging the generator to produce coherent summaries by taking into account sentence and paragraph structures.</p>
+<h3 id="results-and-evaluation">Results and Evaluation</h3>
+<p>We evaluated the model using ROUGE scores (ROUGE-1, ROUGE-2, ROUGE-L) and perplexity:</p>
+<ul>
+<li>ROUGE scores measure the overlap between the generated summaries and the labeled references.</li>
+<li>Perplexity evaluates the model’s ability to predict the target sequence.</li>
+</ul>
+<p>Our FAD-enhanced model outperformed the BART base model in both precision and F1-score across all ROUGE metrics. Additionally, it achieved a lower perplexity score, indicating more accurate predictions.</p>
+<p>Please read the report (below) for detailed results.</p>
+<h3 id="discussion">Discussion</h3>
+<p>This project demonstrates that incorporating a feature alignment discriminator significantly improves the quality of abstractive text summarization. By aligning the word distribution of generated summaries with that of the original text, FAD enhances coherence and accuracy.
+Interestingly, this approach parallels the concept of reinforcement learning from human feedback (RLHF), a method later introduced and widely used in the development of modern large language models (LLMs).
+Future work could extend the application of FAD to other sequence-to-sequence tasks beyond summarization. Additionally, exploring the impact of different hidden layers as features and experimenting with alternative discriminator architectures offer promising directions for further research.</p>
 
             </div>
 
-            <div class="my-4">
+            <div class="my-2 styled-link">
                 
-                <a href="/paper/fad-eecs487.pdf" class="btn btn-outline-dark">
+                <a href="/paper/fad-eecs487.pdf" class="me-2">
                     <i class="fas fa-file-pdf me-1"></i>PDF
                 </a>
                 
@@ -89,13 +130,9 @@
                 
 
                 
-                <a href="https://arxiv.org/abs/2408.13473" class="btn btn-outline-dark">
-                    <i class="ai ai-arxiv me-1"></i>arXiv
-                </a>
+    
                 
-
                 
-
                 
 
                 
@@ -112,22 +149,27 @@
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled" aria-label="Email">
-                    <i class="fas fa-envelope footer-icon"></i>
+                    <i class="fa-solid fa-envelope footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin footer-icon"></i>
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://twitter.com/MuzheW" class="link-unstyled" aria-label="X">
-                    <i class="fa-brands fa-x-twitter footer-icon"></i> 
+                    <i class="fa-brands fa-x-twitter footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/henrw" class="link-unstyled" aria-label="GitHub">
-                    <i class="fab fa-github footer-icon"></i>
+                    <i class="fa-brands fa-github footer-icon"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://scholar.google.com/citations?user=M2_uuN4AAAAJ&hl=en&oi=ao" class="link-unstyled" style="color: #000000;" aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar footer-icon"></i>
                 </a>
             </li>
         </ul>

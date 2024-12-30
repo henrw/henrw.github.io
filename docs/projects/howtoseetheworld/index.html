@@ -17,15 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
-    
     <script defer src="/js/all.min.js"></script>
     
+    
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
@@ -44,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#news">news</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#research">research</a>
+                    <a class="nav-link" href="/#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#projects">projects</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">cv</a>
+                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">CV</a>
                 </li>
             </ul>
         </div>
@@ -63,41 +66,82 @@
     
 <div class="container">
     <div class="row">
-            <h2 class="mb-3">How Do You See The World: Visual Impairment Education in VR</h1>
+            <h2 class="mb-3">How Do You See The World: Visual Impairment Simulations in VR</h1>
             
             
 
             
+                <p class="text-muted styled-link" style="text-decoration: none;">
+                    <em style="text-decoration: none;">CMU 05-899 Interactive Extended Reality Course Project</em>
+                    
+                        (2023)
+                    
+                </p>
+            
+
+            
+            <p class="text-muted styled-link" style="font-size: smaller; font-weight: 400; margin-top: -0.5em">My Role: Design &amp; Implementation of the color blindness interactive scenes</p>
             
             
-            <img src="/images/projects/HowToSeeTheWorld/teaser.jpeg" class="img-fluid my-3" alt="How Do You See The World: Visual Impairment Education in VR">
             
 
             <div class="content">
-                <p>Simulate visual impairments in VR environments to educate people about these conditions and increase awareness.</p>
-<p>More details coming soon&hellip;</p>
+                <div style="position: relative; padding-bottom: 56.25%; margin-bottom: 2em; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe 
+        src="https://www.youtube.com/embed/G-AvFl6b4iE" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+<h3 id="overview">Overview</h3>
+<p>People with normal vision often lack an understanding of the daily challenges faced by individuals with <strong>visual impairments</strong>. This gap in understanding perpetuates barriers to empathy, inclusivity, and accessible design. To address this, this project immerses participants in a hands-on experience that simulates these challenges through virtual environments, interactive tasks, and reflective debriefings, promoting empathy and driving more inclusive practices in technology and beyond.</p>
+<h3 id="simulated-environments--tasks">Simulated Environments &amp; Tasks</h3>
+<ul>
+<li>Living Room (<strong>Cataracts</strong>)
+<ul>
+<li>Activities: Using VR controllers to operate a TV, lamp, and other everyday objects.</li>
+<li>Focus: Replicating the blurry or cloudy vision commonly associated with cataracts. Participants attempt to read magazines, books, and coffee mugs, highlighting the difficulty of text-based tasks.</li>
+</ul>
+</li>
+<li>Kitchen (<strong>Color Blindness</strong>)
+<ul>
+<li>Activities: Identifying ripe fruits, sorting them onto color-coded plates, and cooking a steak while watching for signs of burning.</li>
+<li>Focus: Emphasizing the challenges of distinguishing hues in daily cooking and meal prep, from assessing food freshness to preventing overcooking.</li>
+</ul>
+</li>
+<li>Basement (<strong>Glaucoma</strong>)
+<ul>
+<li>Activities: Counting and comparing objects on a shelf from a distance.</li>
+<li>Focus: Demonstrating how reduced peripheral vision—akin to “tunnel vision”—can complicate everyday tasks like locating items on shelves or assessing spatial arrangements.</li>
+</ul>
+</li>
+<li>Debrief Museum Scenes: Participants explore panels detailing the causes, treatments, and testing methods for each condition. This session clarifies the nuances and real-world implications that participants may have been missed during the simulations, thus helping them consolidate their in-simulation experiences into a deeper, more empathetic understanding of each impairment.</li>
+</ul>
+<p>The implementation was based on post-processing effects in Unity. Cataracts were simulated using depth-of-field effects, color blindness by altering color channels, and glaucoma through a vignette overlay that narrows peripheral vision.</p>
 
             </div>
 
-            <div class="my-4">
+            <div class="my-2 styled-link">
                 
                 
                 
 
                 
-
+    
                 
-
                 
-                <a href="https://www.youtube.com/watch?v=qpcqHmuG72w" class="btn btn-outline-dark">
-                    <i class="fab fa-youtube me-1"></i> Video
+                
+                <a href="https://www.youtube.com/watch?v=qpcqHmuG72w" class="me-2">
+                    <i class="fab fa-youtube"></i> Video
                 </a>
                 
 
                 
 
                 
-                <a href="https://github.com/dailyn269/XR_HowDoYouSeeTheWorld_Project" class="btn btn-outline-dark">
+                <a href="https://github.com/dailyn269/XR_HowDoYouSeeTheWorld_Project" class="me-2">
                     <i class="fas fa-code"></i> Code
                 </a>
                 
@@ -112,22 +156,27 @@
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled" aria-label="Email">
-                    <i class="fas fa-envelope footer-icon"></i>
+                    <i class="fa-solid fa-envelope footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin footer-icon"></i>
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://twitter.com/MuzheW" class="link-unstyled" aria-label="X">
-                    <i class="fa-brands fa-x-twitter footer-icon"></i> 
+                    <i class="fa-brands fa-x-twitter footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/henrw" class="link-unstyled" aria-label="GitHub">
-                    <i class="fab fa-github footer-icon"></i>
+                    <i class="fa-brands fa-github footer-icon"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://scholar.google.com/citations?user=M2_uuN4AAAAJ&hl=en&oi=ao" class="link-unstyled" style="color: #000000;" aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar footer-icon"></i>
                 </a>
             </li>
         </ul>

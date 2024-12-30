@@ -17,15 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
-    
     <script defer src="/js/all.min.js"></script>
     
+    
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
@@ -44,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#news">news</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#research">research</a>
+                    <a class="nav-link" href="/#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#projects">projects</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">cv</a>
+                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">CV</a>
                 </li>
             </ul>
         </div>
@@ -68,18 +71,89 @@
             
 
             
+                <p class="text-muted styled-link" style="text-decoration: none;">
+                    <em style="text-decoration: none;">CMU 05-685 Prototyping Algorithmic Experiences Individual Project</em>
+                    
+                        (2024)
+                    
+                </p>
+            
+
             
             
-            <img src="/images/projects/WikiLearn/teaser.png" class="img-fluid my-3" alt="LLM-enhanced Casual Learning Experience on Wikipedia">
             
 
             <div class="content">
-                <p>Enhance informal learning on Wikipedia with LLM-based instruction and assessment generation with Chrome Extension.</p>
-<p>More details coming soon&hellip;</p>
+                <h3 id="overview">Overview</h3>
+<p>Wikipedia is a vast, crowdsourced knowledge base that many people turn to for <strong>casual learning</strong>—quick, spontaneous exploration of new information. However, it can be overwhelming and sometimes questioned for its reliability. Meanwhile, Large Language Models (LLMs) provide instant, personalized text generation but face criticism for fabricating or misrepresenting facts. This project explores how LLMs and Wikipedia can work together to create a more seamless, trustworthy, and engaging experience for casual learners. By integrating LLM-based features directly into Wikipedia articles, the goal is to support readers in grasping complex information more easily, while maintaining the spontaneity and depth that makes Wikipedia so appealing for informal discovery.</p>
+<h3 id="method">Method</h3>
+<p>Two LLM-based features were prototyped and tested:</p>
+<ul>
+<li><strong>Explain Like I Am Five</strong> (Instruction): This feature simplifies or shortens selected text within the article, helping readers who want quick, digestible explanations without having to leave the page.</li>
+<li><strong>Quiz Me</strong> (Assessment): This feature generates multiple-choice questions with hints and explanations, allowing readers to verify their understanding and add an element of interactive learning.</li>
+</ul>
+<p>The implementation utilized the OpenAI GPT-4 API. A Chrome Extension was developed to automatically parse the DOM tree, extract relevant text blocks, and integrate the LLM-based features.
+<figure>
+    <img 
+        src="/images/projects/Wikilearn/method.svg" 
+        alt="Wikilearn method" 
+        style="max-width: 100%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure></p>
+<h3 id="co-design-study">Co-Design Study</h3>
+<p>Eight participants were invited to the co-design sessions (two in-class and six after-class) following the procedure:</p>
+<ul>
+<li>Baseline Reading (5 minutes): Participants selected a Wikipedia article they were curious about and read it for five minutes as they normally would. Afterwards, they shared initial reactions to Wikipedia’s default layout and how well it supported their casual exploration.</li>
+<li>“Explain Like I Am Five” (10 minutes): Participants applied the feature to the same article to see if it improved their ability to grasp complex information quickly. They then offered feedback on usability, trustworthiness, and what additional LLM-based instructional options might help casual learners.</li>
+<li>“Quiz Me” (10 minutes): Participants tested the quiz feature on the same article, discussing how it fit into their casual reading and whether it aided retention or simply interrupted the flow. Suggestions for new question types and more seamless integration were collected.</li>
+</ul>
+<figure>
+    <img 
+        src="/images/projects/Wikilearn/study.svg" 
+        alt="Wikilearn study setup" 
+        style="max-width: 100%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure>
+<h3 id="insights">Insights</h3>
+<ul>
+<li>Supporting Casual Learning:
+<ul>
+<li>Friendly Entry Points: Participants appreciated the ability to dip into an article and instantly see simpler explanations or relevant quizzes, enabling spontaneous exploration without being overwhelmed.</li>
+<li>Skimming vs. Deep Dive: Some participants prefer a quick glance to satisfy momentary curiosity, while others value a more in-depth investigation. More flexible LLM features should be developed to accommodate both modes.</li>
+</ul>
+</li>
+<li>Trustworthiness:
+<ul>
+<li>Perception: Participants generally found the simplified text faithful to the original.</li>
+<li>Visual Cues &amp; Citations: Lack of the usual Wikipedia references or hyperlinks in the LLM-generated text sometimes diminished confidence for a few participants.</li>
+</ul>
+</li>
+<li>Instructional Features
+<ul>
+<li>Enhanced Readability: “Explain Like I Am Five” made it easier for participants to handle dense or jargon-heavy text.</li>
+<li>Revert &amp; Compare: Replacing the original text entirely felt disruptive; side-by-side or layered views were requested.</li>
+<li>Contextual Tone: Abrupt shifts in style between Wikipedia content and LLM output could break the reading flow.</li>
+</ul>
+</li>
+<li>Assessment Features
+<ul>
+<li>Utility: The generated quizzes aligned well with article content but occasionally disrupted casual browsing. Some participants saw quizzes as an “active learning” opportunity; others viewed them as tangential if they simply wanted a quick fact.</li>
+<li>Customizability: Participants asked for more question types and control over what content is quizzed.</li>
+</ul>
+</li>
+</ul>
 
             </div>
 
-            <div class="my-4">
+            <div class="my-2 styled-link">
+                
+                
+                
+
+                
+    
                 
                 
                 
@@ -87,13 +161,7 @@
                 
 
                 
-
-                
-
-                
-
-                
-                <a href="https://github.com/henrw/wiki-learn" class="btn btn-outline-dark">
+                <a href="https://github.com/henrw/wiki-learn" class="me-2">
                     <i class="fas fa-code"></i> Code
                 </a>
                 
@@ -108,22 +176,27 @@
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled" aria-label="Email">
-                    <i class="fas fa-envelope footer-icon"></i>
+                    <i class="fa-solid fa-envelope footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin footer-icon"></i>
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://twitter.com/MuzheW" class="link-unstyled" aria-label="X">
-                    <i class="fa-brands fa-x-twitter footer-icon"></i> 
+                    <i class="fa-brands fa-x-twitter footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/henrw" class="link-unstyled" aria-label="GitHub">
-                    <i class="fab fa-github footer-icon"></i>
+                    <i class="fa-brands fa-github footer-icon"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://scholar.google.com/citations?user=M2_uuN4AAAAJ&hl=en&oi=ao" class="link-unstyled" style="color: #000000;" aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar footer-icon"></i>
                 </a>
             </li>
         </ul>

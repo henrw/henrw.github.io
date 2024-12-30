@@ -17,15 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
-    
     <script defer src="/js/all.min.js"></script>
     
+    
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
@@ -44,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#news">news</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#research">research</a>
+                    <a class="nav-link" href="/#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#projects">projects</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">cv</a>
+                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">CV</a>
                 </li>
             </ul>
         </div>
@@ -68,20 +71,70 @@
             
 
             
+                <p class="text-muted styled-link" style="text-decoration: none;">
+                    <em style="text-decoration: none;">UMich EECS598 Science of Deep Learning Course Project</em>
+                    
+                        (2023)
+                    
+                </p>
+            
+
+            
+            <p class="text-muted styled-link" style="font-size: smaller; font-weight: 400; margin-top: -0.5em">My Role: Data curation</p>
             
             
-            <img src="/images/projects/SpuriousCorrelation/teaser.png" class="img-fluid my-3" alt="Auxiliary Variables Improve Group Accuracy without Group Information">
             
 
             <div class="content">
-                <p>Validate the effectiveness of auxiliary variables in the first stage of the JTT/BAM algorithm resolving the spurious correlation problem with fine-grained datasets.</p>
-<p>More details coming soon&hellip;</p>
+                <figure>
+    <img 
+        src="/images/projects/SpuriousCorrelation/teaser_large.png" 
+        alt="Spurious Correlation teaser" 
+        style="max-width: 80%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure>
+<h3 id="motivation">Motivation</h3>
+<p>Neural networks often exhibit poor accuracy on rare subgroups despite achieving high overall accuracy due to <strong>spurious correlations</strong>. This occurs when the model relies on superficial features for decision-making, leading to unintended behaviors for certain subgroups within the data distribution. This phenomenon is widespread across various fields, including computer vision, natural language processing, and reinforcement learning.</p>
+<p>Prior research addressing spurious correlations primarily relied on group annotations for either the entire training dataset or only the validation set. These methods, while effective, are often impractical due to the cost and difficulty of obtaining such annotations for real-world datasets. The Bias Amplification (BAM) algorithm, introduced in a <a href="https://arxiv.org/abs/2309.06717">prior work</a>, aims to improve group robustness without relying on group annotations. This algorithm employs a two-stage training process:</p>
+<ol>
+<li>Bias amplification with squared loss. A model ($f_\theta: \mathcal{X}\rightarrow \mathbb{R}^C$) was trained to bias toward majority group samples through the a trainable auxiliary variables $b_i$ for each data sample $(x_i, y_i)$. The objective function is defined as:
+$$
+R_1(\theta, B) = \frac{1}{n}\sum_{i=1}^{n}\mathcal{L}(f_\theta(x_i) + \lambda b_i, y_i)
+$$</li>
+<li>Rebalanced training. This stage continues to train the same model using an error set $E$ obtained from Stage 1. A rebalanced loss is adopted which upweights the examples in the error set:</li>
+</ol>
+<p>$$
+R_2(\theta) = \mu \sum_{(x,y) \in E} \mathcal{L}_{\text{CE}}(f_\theta(x), y) + \sum_{(x,y) \in D \setminus E} \mathcal{L}_{\text{CE}}(f_\theta(x), y)
+$$</p>
+<p>This project further investigates the BAM algorithm to understand the effectiveness and generalizability of its components. The study investigates the role of various elements, including:</p>
+<ul>
+<li>Auxiliary variables ($b_i$)</li>
+<li>Upweight factors ($\mu$)</li>
+<li>Stopping epochs ($T$)</li>
+<li>Different loss functions $\mathcal{L}$</li>
+</ul>
+<h3 id="methodology">Methodology</h3>
+<p>Two new computer vision datasets—Controlled-Waterbirds and Colored-MNIST—were introduced. These datasets allow for precise control over class and group counts, addressing the limitations of previous datasets that had imbalanced class and group sizes, distribution shifts between training and test data, and noise that hindered model learning.</p>
+<p>The study examines the negative correlation between ClassDiff (a metric that quantifies class imbalance; defined as follows) and worst-group accuracy. This correlation was previously observed in the original BAM paper, suggesting the potential of ClassDiff to replace validation group annotations for determining when to stop Stage 2 of the training process.
+$$
+\text{ClassDiff} = \sum_{i,j=1}^{C}|\text{Acc}(\text{class}\ i) - \text{Acc}(\text{class}\ j)|.
+$$</p>
+<h3 id="results">Results</h3>
+<ul>
+<li>ClassDiff and Worst-Group Accuracy:
+Experiments across various settings consistently demonstrated a negative correlation between ClassDiff and worst-group validation accuracy. This finding reinforces the robustness of ClassDiff and its potential as a reliable indicator for determining the optimal stopping point in Stage 2, even without validation group annotations.</li>
+<li>Impact of Upweight Factor ($\mu$):
+Experiments with different upweight factors ($\mu$) on the Colored-MNIST dataset, a relatively simple dataset for addressing spurious correlations, revealed minimal variations in worst-group performance. However, on the Controlled-Waterbirds dataset, a more pronounced trend emerged. As $\mu$ increased, worst-group test accuracy initially improved but eventually declined. Notably, the algorithm exhibited robustness to $\mu$ within a wide range (from 50 to 150).</li>
+<li>Overall Robustness of BAM:
+The study confirmed the robustness of the BAM algorithm across a wide range of parameters and hyperparameters. This implies that BAM can be effectively applied to various datasets with different characteristics.</li>
+</ul>
 
             </div>
 
-            <div class="my-4">
+            <div class="my-2 styled-link">
                 
-                <a href="/paper/spurious-correlation-eecs598.pdf" class="btn btn-outline-dark">
+                <a href="/paper/spurious-correlation-eecs598.pdf" class="me-2">
                     <i class="fas fa-file-pdf me-1"></i>PDF
                 </a>
                 
@@ -89,15 +142,15 @@
                 
 
                 
-
+    
+                
+                
                 
 
                 
 
                 
-
-                
-                <a href="https://github.com/henrw/spurious-correlation-metadataset" class="btn btn-outline-dark">
+                <a href="https://github.com/henrw/spurious-correlation-metadataset" class="me-2">
                     <i class="fas fa-code"></i> Code
                 </a>
                 
@@ -112,22 +165,27 @@
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled" aria-label="Email">
-                    <i class="fas fa-envelope footer-icon"></i>
+                    <i class="fa-solid fa-envelope footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin footer-icon"></i>
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://twitter.com/MuzheW" class="link-unstyled" aria-label="X">
-                    <i class="fa-brands fa-x-twitter footer-icon"></i> 
+                    <i class="fa-brands fa-x-twitter footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/henrw" class="link-unstyled" aria-label="GitHub">
-                    <i class="fab fa-github footer-icon"></i>
+                    <i class="fa-brands fa-github footer-icon"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://scholar.google.com/citations?user=M2_uuN4AAAAJ&hl=en&oi=ao" class="link-unstyled" style="color: #000000;" aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar footer-icon"></i>
                 </a>
             </li>
         </ul>

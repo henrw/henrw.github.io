@@ -17,15 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
-    
     <script defer src="/js/all.min.js"></script>
     
+    
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
@@ -44,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#news">news</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#research">research</a>
+                    <a class="nav-link" href="/#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#projects">projects</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">cv</a>
+                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">CV</a>
                 </li>
             </ul>
         </div>
@@ -68,20 +71,72 @@
             
 
             
+                <p class="text-muted styled-link" style="text-decoration: none;">
+                    <em style="text-decoration: none;">UMich EECS448 Human-Centered ML Course Project</em>
+                    
+                        (2023)
+                    
+                </p>
+            
+
+            
+            <p class="text-muted styled-link" style="font-size: smaller; font-weight: 400; margin-top: -0.5em">My Role: Data preprocessing, Modeling training, Linguistic Analysis</p>
             
             
-            <img src="/images/projects/WhyAntiwork/teaser.png" class="img-fluid my-3" alt="Why Antiwork: Work-Related Stress Identification and Leading Factor Analysis">
             
 
             <div class="content">
-                <p>Harsh working environments and work-related stress have been known to contribute to mental health problems such as anxiety, depression, and suicidal ideation. As such, it is paramount to create solutions that can both detect employee unhappiness and find the root cause of the problem. While prior works have examined causes of mental health using machine learning, they typically focus on general mental health analysis, with few of them focusing on explainable solutions or looking at the workplace-specific setting. r/antiwork is a subreddit for the antiwork movement, which is the desire to stop working altogether. Using this subreddit as a proxy for work environment dissatisfaction, we create a new dataset for antiwork sentiment detection and subsequently train a model that highlights the words with antiwork sentiments. Following this, we performed a qualitative and quantitative analysis to uncover some of the key insights into the mindset of individuals who identify with the antiwork movement and how their working environments influenced them. We find that working environments that do not give employees authority or responsibility, frustrating recruiting experiences, and unfair compensation, are some of the leading causes of the antiwork sentiment, resulting in a lack of self-confidence and motivation among their employees.</p>
-<p>More details coming soon&hellip;</p>
+                <figure>
+    <img 
+        src="/images/projects/WhyAntiwork/teaser_large.png" 
+        alt="WhyAntiwork teaser" 
+        style="max-width: 100%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure>
+<h3 id="overview">Overview</h3>
+<p>Toxic workplaces can contribute to mental health problems like anxiety, depression, and even suicidal ideation. Some of the reasons employees may develop negative feelings towards work are unpleasant working environments, unreasonable workloads, and harsh supervisors. These feelings are referred to as &ldquo;antiwork sentiment&rdquo; and can result in harmful negative emotions. This project examines the characteristics and underlying causes of antiwork sentiment and explores methods for predicting such sentiment. The goal is to provide insights into reducing workplace toxicity and enabling timely interventions.</p>
+<h3 id="dataset-collection">Dataset Collection</h3>
+<p>We collected data from Reddit, a popular online forum, to analyze the behavioral characteristics of antiwork sentiment. Five subreddits were chosen for their relevance to workplace context: &ldquo;r/antiwork&rdquo;, &ldquo;r/recruiting&rdquo;, &ldquo;r/recruitinghell&rdquo;, &ldquo;r/work&rdquo;, and &ldquo;r/jobs&rdquo;</p>
+<ul>
+<li>Size: 329,830 posts and 400,000 comments spanning from 03/27/2009 to 12/31/2022.</li>
+<li>User Classification: Users are labeled as &ldquo;antiwork&rdquo; or &ldquo;neutral&rdquo; based on their posting history across these subreddits.</li>
+</ul>
+<h3 id="sentiment-prediction">Sentiment Prediction</h3>
+<p>We explored the following models for antiwork sentiment prediction:</p>
+<ul>
+<li>SVM: A linear model was used for simple classification tasks with features like word frequency (TF-IDF), linguistic patterns (parts of speech, punctuation), and social engagement (scores, comments, etc.).</li>
+<li>BERT: A transformer-based encoder that transforms text into feature vectors.</li>
+<li>RoBERTa-RNN: A robustly optimized BERT model, RoBERTa, was used to encode the text. An RNN was then used to capture dependencies between posts.</li>
+</ul>
+<h3 id="feature-analysis">Feature Analysis</h3>
+<ul>
+<li>Linguisitic Analysis: LIWC (Linguistic Inquiry and Word Count) was used to analyze linguistic patterns in posts.</li>
+<li>Topic Modeling: Latent Dirichlet Allocation (LDA) was used to identify prominent topics within antiwork posts.</li>
+</ul>
+<h3 id="key-findings">Key Findings</h3>
+<ul>
+<li>Model Performance: The RoBERTa-RNN model achieved 80% accuracy in identifying users with antiwork sentiments.</li>
+<li>Antiwork Characteristics: Individuals expressing antiwork sentiments exhibit:
+<ul>
+<li>A lack of self-affirmation and confidence.</li>
+<li>A decreased focus on personal well-being and daily life activities.</li>
+</ul>
+</li>
+<li>Leading Factors for Antiwork:
+<ul>
+<li>Harsh Working Environments: Lack of respect, feeling unvalued or powerless.</li>
+<li>Frustrating Recruiting Experiences: Lengthy processes, rejections, and unmet expectations.</li>
+<li>Unfair Compensation: Concerns about low wages.</li>
+</ul>
+</li>
+</ul>
 
             </div>
 
-            <div class="my-4">
+            <div class="my-2 styled-link">
                 
-                <a href="/paper/why-antiwork-eecs448.pdf" class="btn btn-outline-dark">
+                <a href="/paper/why-antiwork-eecs448.pdf" class="me-2">
                     <i class="fas fa-file-pdf me-1"></i>PDF
                 </a>
                 
@@ -89,13 +144,13 @@
                 
 
                 
-                <a href="https://arxiv.org/abs/2408.13473" class="btn btn-outline-dark">
+                <a href="https://arxiv.org/abs/2408.13473" class="me-2">
                     <i class="ai ai-arxiv me-1"></i>arXiv
                 </a>
                 
-
+    
                 
-
+                
                 
 
                 
@@ -112,22 +167,27 @@
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled" aria-label="Email">
-                    <i class="fas fa-envelope footer-icon"></i>
+                    <i class="fa-solid fa-envelope footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin footer-icon"></i>
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://twitter.com/MuzheW" class="link-unstyled" aria-label="X">
-                    <i class="fa-brands fa-x-twitter footer-icon"></i> 
+                    <i class="fa-brands fa-x-twitter footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/henrw" class="link-unstyled" aria-label="GitHub">
-                    <i class="fab fa-github footer-icon"></i>
+                    <i class="fa-brands fa-github footer-icon"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://scholar.google.com/citations?user=M2_uuN4AAAAJ&hl=en&oi=ao" class="link-unstyled" style="color: #000000;" aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar footer-icon"></i>
                 </a>
             </li>
         </ul>

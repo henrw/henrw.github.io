@@ -17,15 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
-    
     <script defer src="/js/all.min.js"></script>
     
+    
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
@@ -44,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#news">news</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#research">research</a>
+                    <a class="nav-link" href="/#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#projects">projects</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">cv</a>
+                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">CV</a>
                 </li>
             </ul>
         </div>
@@ -68,18 +71,89 @@
             
 
             
+                <p class="text-muted styled-link" style="text-decoration: none;">
+                    <em style="text-decoration: none;">SJTU VG101 Intro to Programming Course Project</em>
+                    
+                        (2020)
+                    
+                </p>
+            
+
+            
+            <p class="text-muted styled-link" style="font-size: smaller; font-weight: 400; margin-top: -0.5em">My Role: Modeling, Visualization</p>
             
             
-            <img src="/images/projects/Mask/teaser.png" class="img-fluid my-3" alt="Mask Redistribution Simulator">
             
 
             <div class="content">
-                <p>C++ program that simulates the distribution of masks among the cities with a certain mask production capacity during the COVID-19 pandemic.</p>
-<p>More details coming soon&hellip;</p>
+                <h3 id="overview">Overview</h3>
+<p>I started learning computer programming during the devastating COVID-19 outbreak. My teammates and I were deeply shocked to learn about the numerous deaths in Hubei Province caused by sudden infection spikes and mask shortages. This inspired us to create a project in C++ with OpenGL to simulate how varying production capacities, transportation routes, and population behaviors might affect the spread of the virus. Our goal was to predict a more efficient mask distribution network for Hubei Province, China.</p>
+<h3 id="modeling">Modeling</h3>
+<p>We used the classical <a href="https://www.pnas.org/doi/abs/10.1073/pnas.31.1.24">Susceptible–Infected–Recovered (SIR) Model</a> to simulate the dynamics of COVID-19 infection. Defining the population of susceptible, infected, and recovered people to be $S$, $I$, and $R$ respectively (total population $N$), their interactions can be described with the following equations:
+$$
+\frac{dS}{dt} = -\frac{\beta SI}{N}, \quad
+\frac{dI}{dt} = \frac{\beta SI}{N} - \gamma I, \quad
+\frac{dR}{dt} = \gamma I
+$$
+Here, $\beta$ represents the effective contact rate, which is adjusted by mask availability, and $\gamma$ represents the mean recovery rate, which would depend on hospital capacity and evolves with time based on our assumptions.</p>
+<p>Three main factors influence mask distribution modeling:</p>
+<ul>
+<li>Consumption: A daily mask usage rate based on whether individuals are susceptible, infected, or recovered.</li>
+<li>Production: Major industrial cities produce masks daily, adding to their inventories over time.</li>
+<li>Transportation (To moderate):
+<ul>
+<li>Between Major and Non-Major Cities (red roads): Masks are prioritized for cities with the most urgent infection growth rates $\tfrac{dI}{dt}$. Surplus masks are sent to less-urgent cities if stock remains.</li>
+<li>Within Regional Networks (yellow roads): Smaller-scale routes supply neighboring cities every two hours.</li>
+</ul>
+</li>
+</ul>
+<p>These factors collectively adjust each city’s mask inventory, affecting $\beta$ in the SIR model and influencing each city’s infection trajectory.</p>
+<h3 id="user-interface">User Interface</h3>
+<ul>
+<li>Initial Input Screen: Users specify city types (major industrial city vs. regular cities), mask production capacities, and a tolerable infection ratio. They can click on fields to enter values and press “OK” to start the simulation.</li>
+</ul>
+<figure>
+    <img 
+        src="/images/projects/Mask/UI1.png" 
+        alt="Mask redistribution UI1" 
+        style="max-width: 80%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure>
+<ul>
+<li>Main Simulation Dashboard:
+<ul>
+<li>Message Box: Displays updates on simulation progress and outcome reasons (e.g., a city surpassing the infection threshold, or no more active infections).</li>
+<li>Map of Hubei:
+<ul>
+<li>Color-coded to represent infection severity in each city (darker shades = higher infection).</li>
+<li>Two types of roads appear, each with its own animation and usage rules (red for large-scale mask shipments from Xiantao every 6 hours, yellow for smaller shipments within regional networks every 2 hours).</li>
+<li>The simulation runs over time steps, updating the map’s color gradients, animating road usage, and refreshing data metrics to mirror the evolving infection and resource distribution landscape.</li>
+</ul>
+</li>
+<li>Data List: Shows four critical metrics (total population, number of infected, number of recovered, mask inventory) for each city.</li>
+<li>Interactive Features: An “i” (information) button provides guidance; clicking on a city offers infection trends for that specific city.</li>
+</ul>
+</li>
+</ul>
+<figure>
+    <img 
+        src="/images/projects/Mask/UI2.png" 
+        alt="Mask redistribution UI2" 
+        style="max-width: 80%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure>
 
             </div>
 
-            <div class="my-4">
+            <div class="my-2 styled-link">
+                
+                
+                
+
+                
+    
                 
                 
                 
@@ -87,13 +161,7 @@
                 
 
                 
-
-                
-
-                
-
-                
-                <a href="https://github.com/henrw/VG101_project_MaskDistributionSimulator" class="btn btn-outline-dark">
+                <a href="https://github.com/henrw/VG101_project_MaskDistributionSimulator" class="me-2">
                     <i class="fas fa-code"></i> Code
                 </a>
                 
@@ -108,22 +176,27 @@
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled" aria-label="Email">
-                    <i class="fas fa-envelope footer-icon"></i>
+                    <i class="fa-solid fa-envelope footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin footer-icon"></i>
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://twitter.com/MuzheW" class="link-unstyled" aria-label="X">
-                    <i class="fa-brands fa-x-twitter footer-icon"></i> 
+                    <i class="fa-brands fa-x-twitter footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/henrw" class="link-unstyled" aria-label="GitHub">
-                    <i class="fab fa-github footer-icon"></i>
+                    <i class="fa-brands fa-github footer-icon"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://scholar.google.com/citations?user=M2_uuN4AAAAJ&hl=en&oi=ao" class="link-unstyled" style="color: #000000;" aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar footer-icon"></i>
                 </a>
             </li>
         </ul>

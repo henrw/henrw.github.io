@@ -17,15 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
-    
     <script defer src="/js/all.min.js"></script>
     
+    
+    <script>
+        MathJax = {
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
@@ -44,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/#news">news</a>
+                    <a class="nav-link" href="/#news">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#research">research</a>
+                    <a class="nav-link" href="/#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#projects">projects</a>
+                    <a class="nav-link" href="/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">cv</a>
+                    <a class="nav-link" href="/files/MuzheWuCVPublic.pdf">CV</a>
                 </li>
             </ul>
         </div>
@@ -68,18 +71,81 @@
             
 
             
+                <p class="text-muted styled-link" style="text-decoration: none;">
+                    <em style="text-decoration: none;">CMU 05-685 Prototyping Algorithmic Experiences Individual Project</em>
+                    
+                        (2024)
+                    
+                </p>
+            
+
             
             
-            <img src="/images/projects/GoalTracking/teaser.png" class="img-fluid my-3" alt="Personified Goal Tracking Experience with Decreasing Obtrusiveness">
             
 
             <div class="content">
-                <p>Prototype immersive XR goal tracking experience exploring concepts of personification and fading.</p>
-<p>More details coming soon&hellip;</p>
+                <figure>
+    <img 
+        src="/images/projects/GoalTracking/teaser_large.png" 
+        alt="XR Goal Tracker teaser" 
+        style="max-width: 100%; display: block; margin: 0 auto;" 
+        class="pt-2">
+    <figcaption></figcaption>
+</figure>
+<h3 id="overview">Overview</h3>
+<p>Many people struggle to achieve personal goals, whether it’s eating healthier, exercising consistently, or staying organized with daily tasks. This project introduces a prototype for an active and immersive goal-tracking experience, featuring a goal tracker personified as celebrity avatars the user may feel connected to. Inspired by the concept of <strong>fading</strong>, the tracker gradually becomes less obstrusive as the user establishes consistent habits. By implementing this in VR, I explored whether extended, immersive interactions with celebrity avatars could enhance user motivation and engagement.</p>
+<h3 id="prototyping-study">Prototyping Study</h3>
+<p>Three VR scenes were created and tested:</p>
+<ul>
+<li>Main Scene
+<ul>
+<li>Users engage in routine activities (e.g., watching YouTube).</li>
+<li>An <strong>always-on goal tracker</strong> (timer + daily goals) stays in their peripheral vision.</li>
+<li>When it’s time to work on a goal, the relevant celebrity avatar appears to prompt the user. The voice was generated via Google Text-to-Speech. Users can either follow the prompt or ignore it.</li>
+</ul>
+</li>
+<li>Lunch Scene (ft. Gordon Ramsay)
+<ul>
+<li>Users choose from different foods (e.g., soda, bananas, burgers).</li>
+<li>Gordon Ramsay’s voice line changes based on whether the user picks healthy or unhealthy items.</li>
+</ul>
+</li>
+<li>Exercise Scene (ft. LeBron James)
+<ul>
+<li>Users practice shooting basketballs while LeBron James provides ongoing encouragement or urges them to continue if they pause.</li>
+</ul>
+</li>
+</ul>
+<p>The implementation was based on Unity and Oculus Quest 2.
+During the study session, I faked the AI (in a Wizard-of-Oz fashion) by monitoring each participant’s actions (via a live mirror of the VR view) and deciding when they had formed a habit—thus triggering the AI fade-out.
+If participants succeeded in completing tasks, the avatar would disappear on the next “day.”</p>
+<p>The following video illustrates the study walkthrough:</p>
+<div style="position: relative; padding-bottom: 56.25%; margin-bottom: 2em; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+    <iframe 
+        src="https://www.youtube.com/embed/HeBlAPVUMkw" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+<h3 id="insights">Insights</h3>
+<ul>
+<li>Celebrity Avatars: While some participants enjoyed or tolerated Gordon and LeBron’s presence, others found them unsettling or unmotivating—particularly when the avatars repeatedly prompted them. Some participants did not feel a strong connection to these avatars, attributing to the potential uncanny valley effect.</li>
+<li>Habit Formation &amp; Timing: Using just one simulated day as the threshold to fade the AI felt too brief to establish genuine habits. Participants suggested longer timelines or more nuanced criteria.</li>
+<li>Obtrusive Interface Design: The large, in-view goal-tracking interface blocked participants’ vision. They suggested a more aesthetic, less distracting design to avoid feeling overwhelmed.</li>
+<li>Realism of VR (Meta-level Reflection): Despite VR&rsquo;s immersive potential, some participants did not feel the scenarios were realistic enough to simulate day-to-day activity. They also felt the tasks functioned more like short “demos” than a genuine reflection of real life.</li>
+</ul>
 
             </div>
 
-            <div class="my-4">
+            <div class="my-2 styled-link">
+                
+                
+                
+
+                
+    
                 
                 
                 
@@ -87,13 +153,7 @@
                 
 
                 
-
-                
-
-                
-
-                
-                <a href="https://github.com/henrw/VRGoalTrackerPrototype" class="btn btn-outline-dark">
+                <a href="https://github.com/henrw/VRGoalTrackerPrototype" class="me-2">
                     <i class="fas fa-code"></i> Code
                 </a>
                 
@@ -108,22 +168,27 @@
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="mailto:muzhew@andrew.cmu.edu" class="link-unstyled" aria-label="Email">
-                    <i class="fas fa-envelope footer-icon"></i>
+                    <i class="fa-solid fa-envelope footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://linkedin.com/in/wumuzhe" class="link-unstyled" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin footer-icon"></i>
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://twitter.com/MuzheW" class="link-unstyled" aria-label="X">
-                    <i class="fa-brands fa-x-twitter footer-icon"></i> 
+                    <i class="fa-brands fa-x-twitter footer-icon"></i>
                 </a>
             </li>
             <li class="list-inline-item">
                 <a href="https://github.com/henrw" class="link-unstyled" aria-label="GitHub">
-                    <i class="fab fa-github footer-icon"></i>
+                    <i class="fa-brands fa-github footer-icon"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://scholar.google.com/citations?user=M2_uuN4AAAAJ&hl=en&oi=ao" class="link-unstyled" style="color: #000000;" aria-label="Google Scholar">
+                    <i class="fa-brands fa-google-scholar footer-icon"></i>
                 </a>
             </li>
         </ul>
