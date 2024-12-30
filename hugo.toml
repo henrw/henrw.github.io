@@ -1,3 +1,11 @@
 baseURL = 'https://wumuzhe.com/'
 languageCode = 'en-us'
 title = 'Muzhe Wu'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      noIntraEmphasis = true
