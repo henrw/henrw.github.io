@@ -109,9 +109,9 @@ R_2(\theta) = \mu \sum_{(x,y) \in E} \mathcal{L}_{\text{CE}}(f_\theta(x), y) + \
 $$</p>
 <p>This project further investigates the BAM algorithm to understand the effectiveness and generalizability of its components. The study investigates the role of various elements, including:</p>
 <ul>
-<li>Auxiliary variables ($b_i$)</li>
-<li>Upweight factors ($\mu$)</li>
-<li>Stopping epochs ($T$)</li>
+<li>Auxiliary variables $b_i$</li>
+<li>Upweight factors $\mu$</li>
+<li>Stopping epochs $T$</li>
 <li>Different loss functions $\mathcal{L}$</li>
 </ul>
 <h3 id="methodology">Methodology</h3>
@@ -124,8 +124,8 @@ $$</p>
 <ul>
 <li>ClassDiff and Worst-Group Accuracy:
 Experiments across various settings consistently demonstrated a negative correlation between ClassDiff and worst-group validation accuracy. This finding reinforces the robustness of ClassDiff and its potential as a reliable indicator for determining the optimal stopping point in Stage 2, even without validation group annotations.</li>
-<li>Impact of Upweight Factor ($\mu$):
-Experiments with different upweight factors ($\mu$) on the Colored-MNIST dataset, a relatively simple dataset for addressing spurious correlations, revealed minimal variations in worst-group performance. However, on the Controlled-Waterbirds dataset, a more pronounced trend emerged. As $\mu$ increased, worst-group test accuracy initially improved but eventually declined. Notably, the algorithm exhibited robustness to $\mu$ within a wide range (from 50 to 150).</li>
+<li>Impact of Upweight Factor $\mu$:
+Experiments with different upweight factors $\mu$ on the Colored-MNIST dataset, a relatively simple dataset for addressing spurious correlations, revealed minimal variations in worst-group performance. However, on the Controlled-Waterbirds dataset, a more pronounced trend emerged. As $\mu$ increased, worst-group test accuracy initially improved but eventually declined. Notably, the algorithm exhibited robustness to $\mu$ within a wide range (from 50 to 150).</li>
 <li>Overall Robustness of BAM:
 The study confirmed the robustness of the BAM algorithm across a wide range of parameters and hyperparameters. This implies that BAM can be effectively applied to various datasets with different characteristics.</li>
 </ul>
