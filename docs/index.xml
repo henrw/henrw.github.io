@@ -118,7 +118,7 @@
       <link>https://wumuzhe.com/projects/maskredistribution/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/projects/maskredistribution/</guid>
-      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;I started learning computer programming during the devastating COVID-19 outbreak. My teammates and I were deeply shocked to learn about the numerous deaths in Hubei Province caused by sudden infection spikes and mask shortages. This inspired us to create a project in C++ with OpenGL to simulate how varying production capacities, transportation routes, and population behaviors might affect the spread of the virus. Our goal was to predict a more efficient mask distribution network for Hubei Province, China.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;I started learning computer programming during the devastating COVID-19 outbreak. My teammates and I were deeply shocked to learn about the heartbreaking death rate in Hubei Province caused by sudden infection spikes and mask shortages. This inspired us to create a project in C++ with OpenGL to simulate how varying production capacities, transportation routes, and population behaviors might affect the spread of the virus. Our goal was to predict a more efficient mask distribution network for Hubei Province, China.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Other Stuff I Made</title>
