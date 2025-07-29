@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News on Muzhe Wu</title>
+    <title>News on Muzhe Wu&#39;s Homepage</title>
     <link>https://wumuzhe.com/news/</link>
-    <description>Recent content in News on Muzhe Wu</description>
+    <description>Recent content in News on Muzhe Wu&#39;s Homepage</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wumuzhe.com/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>PhD Program Application</title>
-      <link>https://wumuzhe.com/news/2025-02-18/</link>
-      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://wumuzhe.com/news/2025-02-18/</guid>
-      <description>I&amp;rsquo;ve decided to return to UMich for my PhD! Grateful to everyone who chatted with me and shared opportunities.</description>
+      <title>DIS2025</title>
+      <link>https://wumuzhe.com/news/2025-07-09/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2025-07-09/</guid>
+      <description>Rubikon accepted and presented at DIS2025.</description>
     </item>
     <item>
-      <title>UIST/ISMAR</title>
+      <title>UIST/ISMAR2024</title>
       <link>https://wumuzhe.com/news/2024-10-14/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/news/2024-10-14/</guid>
       <description>Had a fruitful two weeks attending UIST and ISMAR and presenting our work New Ears.</description>
     </item>
     <item>
-      <title>UIST/ISMAR</title>
+      <title>Graduation</title>
       <link>https://wumuzhe.com/news/2024-07-30/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/news/2024-07-30/</guid>
-      <description>Finished my master&amp;rsquo;s program at CMU HCII.</description>
+      <description>Finished my master&amp;rsquo;s program at CMU (METALS).</description>
     </item>
   </channel>
 </rss>

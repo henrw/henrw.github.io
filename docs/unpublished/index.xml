@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unpublisheds on Muzhe Wu&#39;s Homepage</title>
+    <link>https://wumuzhe.com/unpublished/</link>
+    <description>Recent content in Unpublisheds on Muzhe Wu&#39;s Homepage</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wumuzhe.com/unpublished/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Performance as Agency? Investigating the Trade-off between Sense of Agency and Performance in Target Selection with Preemptive Assistance in VR</title>
+      <link>https://wumuzhe.com/unpublished/agencyperformance/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/unpublished/agencyperformance/</guid>
+      <description>&lt;p&gt;Virtual Reality (VR) allows for natural, embodied interactions with virtual elements, fostering immersive experiences. However, these interactions can feel taxing and become more challenging as task demands increase (e.g., selecting small, densely clustered targets). To help users perform such complex tasks, there exist a number of assistance techniques such as providing users with suggestions or automatically performing selections for them. While those techniques increase users’ task performance, their impact on user experience, specifically their Sense of Agency (SoA)—the subjective feeling of controlling one’s actions and their outcomes, is unknown. To investigate the trade-off between task assistance and SoA, we contribute results from a within-subject user study (N=12). We quantitatively examine SoA in VR target selection in relation to task difficulty (2 levels) and assistance (3 levels) which implicitly preempted participants’ actions. We measured SoA with both implicit measures of the intentional binding paradigm (predictive) and participants’ self-reports (postdictive), and compared those to participants’ task performance and behavioral metrics. Our results reveal that while a higher level of assistance improved performance, postdictive SoA remained stable independent of task settings and predictive SoA increased in easy task settings with more assistance. This highlights the feasibility to provide assistance to users in complex tasks, specifically when the assistance technique is designed unobtrusively.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
