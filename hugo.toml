@@ -1,6 +1,6 @@
 baseURL = 'https://wumuzhe.com/'
 languageCode = 'en-us'
-title = 'Muzhe Wu'
+title = "Muzhe Wu's Homepage"
 
 [markup.goldmark.renderer]
 unsafe = true
