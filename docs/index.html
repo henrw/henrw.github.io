@@ -120,7 +120,7 @@
                 </span>
             </p>
             <p>
-                Previously, I earned a master's degree from Carnegie Mellon University (HCII), where had the pleasure of working with
+                Previously, I earned a master's degree from Carnegie Mellon University (HCII), where I had the pleasure of working with
                 <a href="https://www.davidlindlbauer.com/" target="_blank" style="font-weight: 500;">Dr. David Lindlbauer</a> on Extended Reality and
                 <a href="https://www.andrew.cmu.edu/user/hongs/" target="_blank" style="font-weight: 500;">Dr. Hong Shen</a> on Responsible AI Tools.
                 I earned dual bachelor's degrees from the University of Michigan and Shanghai Jiao Tong University.
@@ -135,6 +135,110 @@
         <h4>Selected Publications</h4>
         <p class="text-muted">* equal contribution</p>
         
+            
+            
+            
+            <div class="row py-3"
+                onmouseover="videoPlay(this)" 
+                onmouseout="videoStop(this)"
+            >
+                <div class="col-5">
+                    <div class="me-2 " style="cursor: pointer; position: relative; width: 100%; overflow: hidden; aspect-ratio: 5 / 3;" onclick="location.href='https:\/\/wumuzhe.com\/research\/ailego\/'">
+                        <img src="/images/research/AILEGO/teaser.png" alt="AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages" class="project-image" style="position: absolute; top: 0; left: 0; width: 100%; height: auto; object-fit: cover;">
+                        
+                        <div class="video-container" id="project_video" style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: auto;">
+                            <video muted autoplay loop style="width: 100%; height: auto; object-fit: cover;">
+                                <source src="/images/research/AILEGO/teaser.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+                <div class="col-7" style="font-size: 15px;">
+                    <div class="styled-link mb-1"><span class="status"><a href="https://cscw.acm.org/2026/">To Appear at CSCW 2026</a></span></div>
+                    <h5
+                        onclick="location.href='https:\/\/wumuzhe.com\/research\/ailego\/'"
+                        style="font-weight: 600; cursor: pointer;">
+                        AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages
+                    </h5>
+            
+                    <div class="text-muted">
+                        
+                        
+                        
+                            
+                            
+                                <span style="font-weight: 500;">Muzhe Wu*</span>,
+                            
+                        
+                            
+                            
+                                <span>Yanzhi Zhao*</span>,
+                            
+                        
+                            
+                            
+                                <span>Shuyi Han</span>,
+                            
+                        
+                            
+                            
+                                <span>Michael Xieyang Liu</span>,
+                            
+                        
+                            
+                            
+                                <span>Hong Shen</span>
+                            
+                        
+                        
+                    </div>
+
+                    <div class="my-2 link">
+                        
+                        
+                        
+
+                        
+                        <a href="https://arxiv.org/abs/2505.10300" class="me-2">
+                            <i class="ai ai-arxiv me-1"></i>arXiv
+                        </a>
+                        
+            
+                        
+                        <a href="https://ai-lego.vercel.app/" class="me-2">
+                            <i class="fas fa-globe me-1"></i>Website</a>
+                        </a>
+                        
+                        
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+            <script>
+                function videoPlay(rowElement) {
+                    
+                    const videoContainer = rowElement.querySelector(".video-container");
+                    const imageDiv = rowElement.querySelector("img");
+                    if (videoContainer) {
+                        videoContainer.style.opacity = "1";
+                        imageDiv.style.opacity = "0";
+                    }
+                }
+
+                function videoStop(rowElement) {
+                    const videoContainer = rowElement.querySelector(".video-container");
+                    const imageDiv = rowElement.querySelector("img");
+                    if (videoContainer) {
+                        videoContainer.style.opacity = "0";
+                        imageDiv.style.opacity = "1";
+                    }
+                }
+            </script>
             
             
             
@@ -217,110 +321,6 @@
                         <a href="https://youtu.be/4Jes_0nd3kY" class="me-2">
                             <i class="fab fa-youtube"></i> Video
                         </a>
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-            <script>
-                function videoPlay(rowElement) {
-                    
-                    const videoContainer = rowElement.querySelector(".video-container");
-                    const imageDiv = rowElement.querySelector("img");
-                    if (videoContainer) {
-                        videoContainer.style.opacity = "1";
-                        imageDiv.style.opacity = "0";
-                    }
-                }
-
-                function videoStop(rowElement) {
-                    const videoContainer = rowElement.querySelector(".video-container");
-                    const imageDiv = rowElement.querySelector("img");
-                    if (videoContainer) {
-                        videoContainer.style.opacity = "0";
-                        imageDiv.style.opacity = "1";
-                    }
-                }
-            </script>
-            
-            
-            
-            <div class="row py-3"
-                onmouseover="videoPlay(this)" 
-                onmouseout="videoStop(this)"
-            >
-                <div class="col-5">
-                    <div class="me-2 " style="cursor: pointer; position: relative; width: 100%; overflow: hidden; aspect-ratio: 5 / 3;" onclick="location.href='https:\/\/wumuzhe.com\/research\/ailego\/'">
-                        <img src="/images/research/AILEGO/teaser.png" alt="AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages" class="project-image" style="position: absolute; top: 0; left: 0; width: 100%; height: auto; object-fit: cover;">
-                        
-                        <div class="video-container" id="project_video" style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: auto;">
-                            <video muted autoplay loop style="width: 100%; height: auto; object-fit: cover;">
-                                <source src="/images/research/AILEGO/teaser.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        
-                    </div>
-                </div>
-            
-                <div class="col-7" style="font-size: 15px;">
-                    <div class="styled-link mb-1"><span class="status">arXiv'25</span></div>
-                    <h5
-                        onclick="location.href='https:\/\/wumuzhe.com\/research\/ailego\/'"
-                        style="font-weight: 600; cursor: pointer;">
-                        AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages
-                    </h5>
-            
-                    <div class="text-muted">
-                        
-                        
-                        
-                            
-                            
-                                <span style="font-weight: 500;">Muzhe Wu*</span>,
-                            
-                        
-                            
-                            
-                                <span>Yanzhi Zhao*</span>,
-                            
-                        
-                            
-                            
-                                <span>Shuyi Han</span>,
-                            
-                        
-                            
-                            
-                                <span>Michael Xieyang Liu</span>,
-                            
-                        
-                            
-                            
-                                <span>Hong Shen</span>
-                            
-                        
-                        
-                    </div>
-
-                    <div class="my-2 link">
-                        
-                        
-                        
-
-                        
-                        <a href="https://arxiv.org/abs/2505.10300" class="me-2">
-                            <i class="ai ai-arxiv me-1"></i>arXiv
-                        </a>
-                        
-            
-                        
-                        <a href="https://ai-lego.vercel.app/" class="me-2">
-                            <i class="fas fa-globe me-1"></i>Website</a>
-                        </a>
-                        
-                        
                         
 
                         

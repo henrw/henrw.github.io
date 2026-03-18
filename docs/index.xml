@@ -6,8 +6,15 @@
     <description>Recent content in Welcome to My Website on Muzhe Wu&#39;s Homepage</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wumuzhe.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages</title>
+      <link>https://wumuzhe.com/research/ailego/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/research/ailego/</guid>
+      <description>&lt;p&gt;Existing Responsible AI (RAI) tools often depend on technical experts to identify harmful problems and are used after the system is built. However, there is growing recognition of the importance of cross-functional collaboration in RAI work during the early design stage. We introduce AI LEGO, a novel interactive tool designed to enhance RAI cross-functional collaboration by helping practitioners communicate and identify harmful design choices early, when problems are easier to address and less likely to cause harm. Through a co-design study with 8 cross-functional AI practitioners and a user study with 18 practitioners, we found that AI LEGO improves practitioners’ ability to identify potential harms in AI designs.  Participants’ feedback also highlights AI LEGO’s effectiveness in facilitating early-stage harm identification across different roles. Finally, we discuss implications for supporting cross-functional collaboration in conducting RAI work in early-stage AI design.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>DIS2025</title>
       <link>https://wumuzhe.com/news/2025-07-09/</link>
@@ -35,13 +42,6 @@
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/unpublished/agencyperformance/</guid>
       <description>&lt;p&gt;Virtual Reality (VR) allows for natural, embodied interactions with virtual elements, fostering immersive experiences. However, these interactions can feel taxing and become more challenging as task demands increase (e.g., selecting small, densely clustered targets). To help users perform such complex tasks, there exist a number of assistance techniques such as providing users with suggestions or automatically performing selections for them. While those techniques increase users’ task performance, their impact on user experience, specifically their Sense of Agency (SoA)—the subjective feeling of controlling one’s actions and their outcomes, is unknown. To investigate the trade-off between task assistance and SoA, we contribute results from a within-subject user study (N=12). We quantitatively examine SoA in VR target selection in relation to task difficulty (2 levels) and assistance (3 levels) which implicitly preempted participants’ actions. We measured SoA with both implicit measures of the intentional binding paradigm (predictive) and participants’ self-reports (postdictive), and compared those to participants’ task performance and behavioral metrics. Our results reveal that while a higher level of assistance improved performance, postdictive SoA remained stable independent of task settings and predictive SoA increased in easy task settings with more assistance. This highlights the feasibility to provide assistance to users in complex tasks, specifically when the assistance technique is designed unobtrusively.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages</title>
-      <link>https://wumuzhe.com/research/ailego/</link>
-      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wumuzhe.com/research/ailego/</guid>
-      <description>&lt;p&gt;Existing Responsible AI (RAI) tools often depend on technical experts to identify harmful problems and are used after the system is built. However, there is growing recognition of the importance of cross-functional collaboration in RAI work during the early design stage. We introduce AI LEGO, a novel interactive tool designed to enhance RAI cross-functional collaboration by helping practitioners communicate and identify harmful design choices early, when problems are easier to address and less likely to cause harm. Through a co-design study with 8 cross-functional AI practitioners and a user study with 18 practitioners, we found that AI LEGO improves practitioners’ ability to identify potential harms in AI designs.  Participants’ feedback also highlights AI LEGO’s effectiveness in facilitating early-stage harm identification across different roles. Finally, we discuss implications for supporting cross-functional collaboration in conducting RAI work in early-stage AI design.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Graduation</title>
