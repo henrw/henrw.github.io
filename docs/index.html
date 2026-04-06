@@ -71,11 +71,34 @@
                     </li>
                 </ul>
             </div>
+            <div id="news" class="sidebar-news mt-2">
+                <p class="sidebar-news-heading">News</p>
+                <div class="sidebar-news-scroll">
+                
+                
+                <div class="sidebar-news-item">
+                    <span class="sidebar-news-date">Mar 2026</span>
+                    <span class="sidebar-news-body">AI LEGO accepted to CSCW 2026. See you in Salt Lake City!</span>
+                </div>
+                
+                <div class="sidebar-news-item">
+                    <span class="sidebar-news-date">Jul 2025</span>
+                    <span class="sidebar-news-body">Attended DIS in Madeira, Portugal and presented Rubikon.</span>
+                </div>
+                
+                <div class="sidebar-news-item">
+                    <span class="sidebar-news-date">Oct 2024</span>
+                    <span class="sidebar-news-body">Attended ISMAR in Seattle and presented New Ears.</span>
+                </div>
+                
+                
+                </div>
+            </div>
             </div>
         </div>
         <div class="col-md-8">
-            <h2 style="font-weight: 600;">Muzhe Wu
-                <span class="chinese-name" style="font-size: 30px;">
+            <h2 style="font-weight: 700; font-size: 28px;">Muzhe Wu
+                <span class="chinese-name" style="font-size: 24px;">
                     吴沐哲
                 </span>
             </h2>
@@ -84,9 +107,9 @@
                     Human-Computer Interaction Researcher
                 </span>
             </div>
-            <p>
+            <p class="bio-intro">
                 I am a first-year PhD student at the 
-                <a href="https://umich.edu/" style="color: #00274C; font-weight: bold;">
+                <a href="https://umich.edu/" style="color: var(--color-primary); font-weight: bold;">
                     <img src="/images/umich-logo.png" alt="University of Michigan Logo" style="height: 1em; vertical-align: middle; margin-right: 0em;">
                     University of Michigan (CSE)
                 </a>
@@ -106,40 +129,47 @@
                         document.getElementById('advisors').innerHTML = advisors.join(' and ') + '.';
                     })();
                 </script>
-                <span style="text-decoration: underline;
+                Previously, I earned a master's degree from Carnegie Mellon University (HCII) and dual bachelor's degrees from the University of Michigan and Shanghai Jiao Tong University.
+            </p>
+            <div class="research-interests">
+                <span class="interests-label">Research Interests</span>
+                <p class="interests-body">
+                    Human society builds on the rich diversity of <span style="color: #fff; background-color: var(--color-accent); border-radius: 2px; padding: 0 2px;">skills and abilities</span>
+                    that enable people to exercise full agency in the <span style="color: #fff; background-color: var(--color-accent); border-radius: 2px; padding: 0 2px;">physical world</span>—from crafting and cooking to navigating complex environments and caring for others.
+                    <span style="text-decoration: underline;
                     text-decoration-style: wavy;
                     text-decoration-thickness: 1px;
                     text-underline-offset: 5px;
-                    text-decoration-color: #FFC107; /* deeper yellow */
-                    background-color: #FFF9C4; /* pale yellow highlight */
-                    padding: 2px 4px;
+                    text-decoration-color: var(--color-accent);
+                    background-color: var(--color-accent-tint);
+                    padding: 2px 0px;
                     border-radius: 4px;">
-                    I create assistive and learning technologies to enhance people's 
-                    <span style="color: #fff; background-color: #1976D2; border-radius: 2px; padding: 0 2px;">abilities</span>
-                    in their everyday interactions with the <span style="color: #fff; background-color: #C62828; border-radius: 2px; padding: 0 2px;">physical world</span>.
-                </span>
-            </p>
-            <p>
-                Previously, I earned a master's degree from Carnegie Mellon University (HCII), where I had the pleasure of working with
-                <a href="https://www.davidlindlbauer.com/" target="_blank" style="font-weight: 500;">Dr. David Lindlbauer</a> on Extended Reality and
-                <a href="https://www.andrew.cmu.edu/user/hongs/" target="_blank" style="font-weight: 500;">Dr. Hong Shen</a> on Responsible AI Tools.
-                I earned dual bachelor's degrees from the University of Michigan and Shanghai Jiao Tong University.
-            </p>
+                    I create learning and assistive technologies that enhance everyone's abilities
+                    in these interactions
+                    </span>,
+                    developing systems that sense, model, and scaffold skill acquisition and performance to bridge the gap between what people can do and what they aspire to do.
+                    These days, I am increasingly probing the question of how AI can support meaningful delegation of physical skills in representations that retain human autonomy.
+                </p>
+            </div>
         </div>
     </div>
 
-    
-
     <section id="research">
         <hr style="border-top: 1.5px solid gray; margin: 1rem 0rem 1rem 0rem;">
-        <h4>Selected Publications</h4>
-        <p class="text-muted">* equal contribution</p>
-        
+        <div class="d-flex align-items-baseline gap-3 mb-1">
+            <h4 class="mb-0">Publications</h4>
+            <div class="pub-filter">
+                <button class="pub-filter-btn active" data-filter="selected">Selected</button>
+                <button class="pub-filter-btn" data-filter="all">All</button>
+            </div>
+        </div>
+        <p class="text-muted" style="font-size: 12px;">* equal contribution</p>
             
             
             
-            <div class="row py-3"
-                onmouseover="videoPlay(this)" 
+            <div class="row py-3 pub-item"
+                data-selected="true"
+                onmouseover="videoPlay(this)"
                 onmouseout="videoStop(this)"
             >
                 <div class="col-5">
@@ -156,7 +186,7 @@
                     </div>
                 </div>
             
-                <div class="col-7" style="font-size: 15px;">
+                <div class="col-7" style="font-size: 14px;">
                     <div class="styled-link mb-1"><span class="status"><a href="https://cscw.acm.org/2026/">To Appear at CSCW 2026</a></span></div>
                     <h5
                         onclick="location.href='https:\/\/wumuzhe.com\/research\/ailego\/'"
@@ -164,7 +194,7 @@
                         AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages
                     </h5>
             
-                    <div class="text-muted">
+                    <div class="text-muted pub-authors">
                         
                         
                         
@@ -242,8 +272,9 @@
             
             
             
-            <div class="row py-3"
-                onmouseover="videoPlay(this)" 
+            <div class="row py-3 pub-item"
+                data-selected="true"
+                onmouseover="videoPlay(this)"
                 onmouseout="videoStop(this)"
             >
                 <div class="col-5">
@@ -260,7 +291,7 @@
                     </div>
                 </div>
             
-                <div class="col-7" style="font-size: 15px;">
+                <div class="col-7" style="font-size: 14px;">
                     <div class="styled-link mb-1"><span class="status"><a href="https://dis.acm.org/2025/">DIS 2025</a></span> <span class="status">| <a href="https://ai.engin.umich.edu/events/2022-ai-symposium/">Michigan AI Symposium (Best Demo Award)</a></span> </div>
                     <h5
                         onclick="location.href='https:\/\/wumuzhe.com\/research\/rubikon\/'"
@@ -268,7 +299,7 @@
                         Rubikon: Intelligent Tutoring for Rubik&#39;s Cube Learning Through AR-enabled Physical Task Reconfiguration
                     </h5>
             
-                    <div class="text-muted">
+                    <div class="text-muted pub-authors">
                         
                         
                         
@@ -350,8 +381,9 @@
             
             
             
-            <div class="row py-3"
-                onmouseover="videoPlay(this)" 
+            <div class="row py-3 pub-item"
+                data-selected="true"
+                onmouseover="videoPlay(this)"
                 onmouseout="videoStop(this)"
             >
                 <div class="col-5">
@@ -368,7 +400,7 @@
                     </div>
                 </div>
             
-                <div class="col-7" style="font-size: 15px;">
+                <div class="col-7" style="font-size: 14px;">
                     <div class="styled-link mb-1"><span class="status"><a href="https://ieeeismar.org/">IEEE ISMAR 2024</a></span></div>
                     <h5
                         onclick="location.href='https:\/\/wumuzhe.com\/research\/newears\/'"
@@ -376,7 +408,7 @@
                         New Ears: An Exploratory Study of Audio Interaction Techniques for Performing Search in a Virtual Reality Environment
                     </h5>
             
-                    <div class="text-muted">
+                    <div class="text-muted pub-authors">
                         
                         
                         
@@ -452,8 +484,9 @@
             
             
             
-            <div class="row py-3"
-                onmouseover="videoPlay(this)" 
+            <div class="row py-3 pub-item"
+                data-selected="false"
+                onmouseover="videoPlay(this)"
                 onmouseout="videoStop(this)"
             >
                 <div class="col-5">
@@ -463,7 +496,7 @@
                     </div>
                 </div>
             
-                <div class="col-7" style="font-size: 15px;">
+                <div class="col-7" style="font-size: 14px;">
                     <div class="styled-link mb-1"><span class="status"><a href="https://ea-tel.eu/ectel2024">ECTEL 2024</a></span></div>
                     <h5
                         onclick="location.href='https:\/\/wumuzhe.com\/research\/activeai\/'"
@@ -471,7 +504,7 @@
                         ActiveAI: The Effectiveness of an Interactive Tutoring System in Developing K-12 AI Literacy
                     </h5>
             
-                    <div class="text-muted">
+                    <div class="text-muted pub-authors">
                         
                         
                         
@@ -579,6 +612,48 @@
             
             
             
+        <script>
+            (function() {
+                const btns = document.querySelectorAll('.pub-filter-btn');
+                const items = document.querySelectorAll('.pub-item');
+
+                function applyFilter(filter) {
+                    items.forEach(function(item) {
+                        const isSelected = item.dataset.selected === 'true';
+                        const show = filter === 'all' || isSelected;
+                        item.style.display = show ? '' : 'none';
+                        if (show) item.classList.add('pub-visible');
+                    });
+                    btns.forEach(function(b) {
+                        b.classList.toggle('active', b.dataset.filter === filter);
+                    });
+                }
+
+                btns.forEach(function(btn) {
+                    btn.addEventListener('click', function() { applyFilter(btn.dataset.filter); });
+                });
+
+                applyFilter('selected');
+            })();
+
+            
+            (function() {
+                if (!('IntersectionObserver' in window)) return;
+                var pubItems = document.querySelectorAll('.pub-item');
+                pubItems.forEach(function(el) { el.classList.add('pub-animate'); });
+                var obs = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(e, idx) {
+                        if (e.isIntersecting) {
+                            setTimeout(function() {
+                                e.target.classList.add('pub-visible');
+                            }, idx * 80);
+                            obs.unobserve(e.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                pubItems.forEach(function(el) { obs.observe(el); });
+            })();
+        </script>
     </section>
 
     

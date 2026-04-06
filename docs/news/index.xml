@@ -6,28 +6,28 @@
     <description>Recent content in News on Muzhe Wu&#39;s Homepage</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wumuzhe.com/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSCW2026</title>
+      <link>https://wumuzhe.com/news/2026-03-17/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2026-03-17/</guid>
+      <description>AI LEGO accepted to CSCW 2026. See you in Salt Lake City!</description>
+    </item>
     <item>
       <title>DIS2025</title>
       <link>https://wumuzhe.com/news/2025-07-09/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/news/2025-07-09/</guid>
-      <description>Rubikon accepted and presented at DIS2025.</description>
+      <description>Attended DIS in Madeira, Portugal and presented Rubikon.</description>
     </item>
     <item>
       <title>UIST/ISMAR2024</title>
       <link>https://wumuzhe.com/news/2024-10-14/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/news/2024-10-14/</guid>
-      <description>Had a fruitful two weeks attending UIST and ISMAR and presenting our work New Ears.</description>
-    </item>
-    <item>
-      <title>Graduation</title>
-      <link>https://wumuzhe.com/news/2024-07-30/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://wumuzhe.com/news/2024-07-30/</guid>
-      <description>Finished my master&amp;rsquo;s program at CMU (METALS).</description>
+      <description>Attended ISMAR in Seattle and presented New Ears.</description>
     </item>
   </channel>
 </rss>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to My Website on Muzhe Wu&#39;s Homepage</title>
+    <title>Muzhe Wu&#39;s Homepage</title>
     <link>https://wumuzhe.com/</link>
-    <description>Recent content in Welcome to My Website on Muzhe Wu&#39;s Homepage</description>
+    <description>Recent content on Muzhe Wu&#39;s Homepage</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
@@ -13,28 +13,35 @@
       <link>https://wumuzhe.com/research/ailego/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/research/ailego/</guid>
-      <description>&lt;p&gt;Existing Responsible AI (RAI) tools often depend on technical experts to identify harmful problems and are used after the system is built. However, there is growing recognition of the importance of cross-functional collaboration in RAI work during the early design stage. We introduce AI LEGO, a novel interactive tool designed to enhance RAI cross-functional collaboration by helping practitioners communicate and identify harmful design choices early, when problems are easier to address and less likely to cause harm. Through a co-design study with 8 cross-functional AI practitioners and a user study with 18 practitioners, we found that AI LEGO improves practitioners’ ability to identify potential harms in AI designs.  Participants’ feedback also highlights AI LEGO’s effectiveness in facilitating early-stage harm identification across different roles. Finally, we discuss implications for supporting cross-functional collaboration in conducting RAI work in early-stage AI design.&lt;/p&gt;</description>
+      <description>&lt;p&gt;selected: true&lt;/p&gt;&#xA;&lt;p&gt;Existing Responsible AI (RAI) tools often depend on technical experts to identify harmful problems and are used after the system is built. However, there is growing recognition of the importance of cross-functional collaboration in RAI work during the early design stage. We introduce AI LEGO, a novel interactive tool designed to enhance RAI cross-functional collaboration by helping practitioners communicate and identify harmful design choices early, when problems are easier to address and less likely to cause harm. Through a co-design study with 8 cross-functional AI practitioners and a user study with 18 practitioners, we found that AI LEGO improves practitioners’ ability to identify potential harms in AI designs.  Participants’ feedback also highlights AI LEGO’s effectiveness in facilitating early-stage harm identification across different roles. Finally, we discuss implications for supporting cross-functional collaboration in conducting RAI work in early-stage AI design.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CSCW2026</title>
+      <link>https://wumuzhe.com/news/2026-03-17/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2026-03-17/</guid>
+      <description>AI LEGO accepted to CSCW 2026. See you in Salt Lake City!</description>
     </item>
     <item>
       <title>DIS2025</title>
       <link>https://wumuzhe.com/news/2025-07-09/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/news/2025-07-09/</guid>
-      <description>Rubikon accepted and presented at DIS2025.</description>
+      <description>Attended DIS in Madeira, Portugal and presented Rubikon.</description>
     </item>
     <item>
       <title>Rubikon: Intelligent Tutoring for Rubik&#39;s Cube Learning Through AR-enabled Physical Task Reconfiguration</title>
       <link>https://wumuzhe.com/research/rubikon/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/research/rubikon/</guid>
-      <description>&lt;p&gt;Learning to solve a Rubik&amp;rsquo;s Cube requires the learners to repeatedly practice a&#xA;skill component, e.g., identifying a misplaced square&#xA;and putting it back. However, for 3D physical tasks such as the Rubik&amp;rsquo;s Cube,&#xA;generating sufficient repeated practice opportunities&#xA;for learners can be challenging, in part because repeated configuration of&#xA;physical objects is strenuous. We propose Rubikon, an&#xA;intelligent tutoring system for learning to solve the Rubik&amp;rsquo;s Cube. Rubikon&#xA;reduces the necessity for repeated manual configurations&#xA;of the Rubik&amp;rsquo;s Cube without compromising the tactile experience of handling a&#xA;physical cube. The foundational design of Rubikon is&#xA;an AR setup, where learners manipulate a physical cube while seeing an&#xA;AR-rendered cube on the screen. Rubikon automatically&#xA;generates configurations of the Rubik&amp;rsquo;s Cube to target learners&amp;rsquo; weaknesses and&#xA;help them exercise diverse knowledge components. A&#xA;between-subjects experiment showed that Rubikon learners scored 25% higher on a&#xA;post-test compared to baselines.&lt;/p&gt;</description>
+      <description>&lt;p&gt;selected: true&lt;/p&gt;&#xA;&lt;p&gt;Learning to solve a Rubik&amp;rsquo;s Cube requires the learners to repeatedly practice a&#xA;skill component, e.g., identifying a misplaced square&#xA;and putting it back. However, for 3D physical tasks such as the Rubik&amp;rsquo;s Cube,&#xA;generating sufficient repeated practice opportunities&#xA;for learners can be challenging, in part because repeated configuration of&#xA;physical objects is strenuous. We propose Rubikon, an&#xA;intelligent tutoring system for learning to solve the Rubik&amp;rsquo;s Cube. Rubikon&#xA;reduces the necessity for repeated manual configurations&#xA;of the Rubik&amp;rsquo;s Cube without compromising the tactile experience of handling a&#xA;physical cube. The foundational design of Rubikon is&#xA;an AR setup, where learners manipulate a physical cube while seeing an&#xA;AR-rendered cube on the screen. Rubikon automatically&#xA;generates configurations of the Rubik&amp;rsquo;s Cube to target learners&amp;rsquo; weaknesses and&#xA;help them exercise diverse knowledge components. A&#xA;between-subjects experiment showed that Rubikon learners scored 25% higher on a&#xA;post-test compared to baselines.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UIST/ISMAR2024</title>
       <link>https://wumuzhe.com/news/2024-10-14/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/news/2024-10-14/</guid>
-      <description>Had a fruitful two weeks attending UIST and ISMAR and presenting our work New Ears.</description>
+      <description>Attended ISMAR in Seattle and presented New Ears.</description>
     </item>
     <item>
       <title>Performance as Agency? Investigating the Trade-off between Sense of Agency and Performance in Target Selection with Preemptive Assistance in VR</title>
@@ -44,18 +51,11 @@
       <description>&lt;p&gt;Virtual Reality (VR) allows for natural, embodied interactions with virtual elements, fostering immersive experiences. However, these interactions can feel taxing and become more challenging as task demands increase (e.g., selecting small, densely clustered targets). To help users perform such complex tasks, there exist a number of assistance techniques such as providing users with suggestions or automatically performing selections for them. While those techniques increase users’ task performance, their impact on user experience, specifically their Sense of Agency (SoA)—the subjective feeling of controlling one’s actions and their outcomes, is unknown. To investigate the trade-off between task assistance and SoA, we contribute results from a within-subject user study (N=12). We quantitatively examine SoA in VR target selection in relation to task difficulty (2 levels) and assistance (3 levels) which implicitly preempted participants’ actions. We measured SoA with both implicit measures of the intentional binding paradigm (predictive) and participants’ self-reports (postdictive), and compared those to participants’ task performance and behavioral metrics. Our results reveal that while a higher level of assistance improved performance, postdictive SoA remained stable independent of task settings and predictive SoA increased in easy task settings with more assistance. This highlights the feasibility to provide assistance to users in complex tasks, specifically when the assistance technique is designed unobtrusively.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Graduation</title>
-      <link>https://wumuzhe.com/news/2024-07-30/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://wumuzhe.com/news/2024-07-30/</guid>
-      <description>Finished my master&amp;rsquo;s program at CMU (METALS).</description>
-    </item>
-    <item>
       <title>New Ears: An Exploratory Study of Audio Interaction Techniques for Performing Search in a Virtual Reality Environment</title>
       <link>https://wumuzhe.com/research/newears/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/research/newears/</guid>
-      <description>&lt;p&gt;Efficiently searching and navigating virtual scenes is essential for performing various downstream tasks and ensuring a positive user experience in VR. Prior VR interaction techniques for such scenarios predominantly rely on users’ visual perception, which contrasts with physical reality, where people typically rely on multimodal information, especially auditory cues, to guide their spatial awareness. In this work, we explore the potential of leveraging auditory interaction techniques to enhance spatial navigation in virtualenvironments. We drew inspiration from prior distant interaction techniques and developed four approaches to augmenting how users hear in the virtual environment: Audio Teleportation, Audio Cone, Ninja Ears, and Boom Mic. In a comparative user study (N = 25), we evaluated these approaches against a baseline teleportation technique in a search task, where participants traversed a virtual environment to locate target items. Our results suggest that several ofour audio interaction techniques may enable more efficient search behaviors while enhancing overall user experience. However, not all techniques were appreciated equally, suggesting that careful attention to their design is critical for ensuring their effectiveness. We conclude by discussing the potential implications of our results for future audio interaction technique designs.&lt;/p&gt;</description>
+      <description>&lt;p&gt;selected: true&lt;/p&gt;&#xA;&lt;p&gt;Efficiently searching and navigating virtual scenes is essential for performing various downstream tasks and ensuring a positive user experience in VR. Prior VR interaction techniques for such scenarios predominantly rely on users’ visual perception, which contrasts with physical reality, where people typically rely on multimodal information, especially auditory cues, to guide their spatial awareness. In this work, we explore the potential of leveraging auditory interaction techniques to enhance spatial navigation in virtualenvironments. We drew inspiration from prior distant interaction techniques and developed four approaches to augmenting how users hear in the virtual environment: Audio Teleportation, Audio Cone, Ninja Ears, and Boom Mic. In a comparative user study (N = 25), we evaluated these approaches against a baseline teleportation technique in a search task, where participants traversed a virtual environment to locate target items. Our results suggest that several ofour audio interaction techniques may enable more efficient search behaviors while enhancing overall user experience. However, not all techniques were appreciated equally, suggesting that careful attention to their design is critical for ensuring their effectiveness. We conclude by discussing the potential implications of our results for future audio interaction technique designs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mini-World: Ambient Co-presence in Web Browsing</title>
@@ -83,7 +83,7 @@
       <link>https://wumuzhe.com/research/activeai/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/research/activeai/</guid>
-      <description>&lt;p&gt;As we witness groundbreaking advancements in Artificial Intelligence (AI), it is clear that the next generation must be equipped with AI literacy: the skill to interact, evaluate, and collaborate with AI systems. This study introduces ActiveAI, a scalable web-based tutoring system aligned with AI4K12’s five big ideas in AI, designed to foster AI literacy among K-12 students through active learning and interaction with intelligent agents. A controlled classroom study involving 171 mid- dle school learners was conducted to assess the effectiveness of ActiveAI in fostering AI literacy skills and competency toward AI. Results showed that, compared to students in the tell-and-practice control condition, stu- dents who used ActiveAI exhibited higher post-test performance in the module about how next-word prediction and temperature work in large language models. Students also developed higher self-reported compe- tence toward AI after using ActiveAI than in the control condition. We conclude by suggesting assessment designs that promote deeper engage- ment with AI concepts by addressing students’ common misconceptions, like “AI thinks just like humans”, in K-12 AI literacy education.&lt;/p&gt;</description>
+      <description>&lt;p&gt;selected: false&lt;/p&gt;&#xA;&lt;p&gt;As we witness groundbreaking advancements in Artificial Intelligence (AI), it is clear that the next generation must be equipped with AI literacy: the skill to interact, evaluate, and collaborate with AI systems. This study introduces ActiveAI, a scalable web-based tutoring system aligned with AI4K12’s five big ideas in AI, designed to foster AI literacy among K-12 students through active learning and interaction with intelligent agents. A controlled classroom study involving 171 mid- dle school learners was conducted to assess the effectiveness of ActiveAI in fostering AI literacy skills and competency toward AI. Results showed that, compared to students in the tell-and-practice control condition, stu- dents who used ActiveAI exhibited higher post-test performance in the module about how next-word prediction and temperature work in large language models. Students also developed higher self-reported compe- tence toward AI after using ActiveAI than in the control condition. We conclude by suggesting assessment designs that promote deeper engage- ment with AI concepts by addressing students’ common misconceptions, like “AI thinks just like humans”, in K-12 AI literacy education.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Do You See The World: Visual Impairment Simulations in VR</title>
