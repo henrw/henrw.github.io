@@ -153,7 +153,7 @@
                     in these interactions
                     </span>,
                     developing systems that sense, model, and scaffold skill acquisition and performance to bridge the gap between what people can do and what they aspire to do.
-                    These days, I am increasingly probing the question of how AI can support meaningful delegation of physical skills in representations that retain human autonomy.
+                    These days, I am increasingly probing the question of how AI can help create meaningful <span style="color: #fff; background-color: var(--color-accent); border-radius: 2px; padding: 0 2px;">representations</span> of physical skills that retain human autonomy.
                 </p>
             </div>
         </div>
@@ -661,6 +661,24 @@
         </script>
     </section>
 
+    <script>
+        function syncNewsHeight() {
+            var ri = document.querySelector('.research-interests');
+            var ns = document.querySelector('.sidebar-news-scroll');
+            if (!ri || !ns) return;
+            if (window.innerWidth < 768) {
+                ns.style.maxHeight = '';
+                return;
+            }
+            var riBottom = ri.getBoundingClientRect().bottom;
+            var nsTop    = ns.getBoundingClientRect().top;
+            var h = riBottom - nsTop - 10;
+            ns.style.maxHeight = (h > 0 ? h : 0) + 'px';
+        }
+        window.addEventListener('load',   syncNewsHeight);
+        window.addEventListener('resize', syncNewsHeight);
+    </script>
+
     
 
 </div>
@@ -698,7 +716,7 @@
         </ul>
     </div>
     <div>
-        <p class="mb-0 footer-text">July 2025. No rights reserved.</p>
+        <p class="mb-0 footer-text">April 2026. No rights reserved.</p>
     </div>
 </footer>
     <script src="/js/jquery-3.5.1.min.js"></script>

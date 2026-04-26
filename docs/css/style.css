@@ -266,7 +266,6 @@ body {
     background-color: var(--color-surface);
     border-radius: 8px;
     padding: 0.7rem 0.85rem;
-    margin-top: 0.75rem !important;
 }
 
 .sidebar-news-heading {
@@ -279,7 +278,6 @@ body {
 }
 
 .sidebar-news-scroll {
-    max-height: 3em;
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #ddd transparent;
