@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 <head>
     
     <meta charset="utf-8" />
@@ -12,11 +12,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <meta name="color-scheme" content="light dark">
+    <script>
+        (function () {
+            var savedTheme = localStorage.getItem('theme');
+            var theme = savedTheme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.dataset.theme = theme;
+        })();
+    </script>
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-10..0,25..151,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&family=Pixelify+Sans:wght@400..700&family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-10..0,25..151,100..1000&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3b2dca7426.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css">
     <script defer src="/js/all.min.js"></script>
@@ -150,11 +158,13 @@
         </ul>
     </div>
     <div>
-        <p class="mb-0 footer-text">April 2026. No rights reserved.</p>
+        <p class="mb-0 footer-text">No rights reserved.</p>
     </div>
 </footer>
+
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+    <script src="/js/theme.js"></script>
 </body>
 </html>
