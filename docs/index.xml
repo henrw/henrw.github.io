@@ -6,8 +6,15 @@
     <description>Recent content on Muzhe Wu&#39;s Homepage</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wumuzhe.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generative Tutorial: Towards Live Contextualized Visual Instructions for Physical Tasks</title>
+      <link>https://wumuzhe.com/research/generativetutorial/</link>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/research/generativetutorial/</guid>
+      <description>&lt;p&gt;Generative Tutorial explores how live visual instructions can adapt to a person&amp;rsquo;s workspace and ongoing physical task. Informed by an evaluation of image and video generation across 15 tasks, the augmented-reality prototype generates goal images and demonstration videos using observed workspace context and predicted outcomes of earlier actions. A study with 24 participants found improved task performance quality, stronger perceived correspondence with the workspace, and shorter step-confirmation intervals compared with pre-authored guidance. The findings also examine how contextual resemblance, generation errors, and delivery timing shape users&amp;rsquo; interpretation and trust.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages</title>
       <link>https://wumuzhe.com/research/ailego/</link>
