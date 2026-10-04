@@ -613,7 +613,7 @@ body { color: var(--pixel-ink); background: var(--pixel-paper); }
     aspect-ratio: 18 / 17;
     margin: 0 auto;
     overflow: hidden;
-    background: #fff;
+    background: #fff url("/images/portrait-pryzm-still.png") center top / 100% auto no-repeat;
     cursor: crosshair;
 }
 .pixel-portrait canvas {
@@ -966,7 +966,7 @@ html[data-theme="dark"] h5,
 html[data-theme="dark"] h6,
 html[data-theme="dark"] .content { color: var(--pixel-ink); }
 html[data-theme="dark"] .text-muted { color: var(--pixel-muted) !important; }
-html[data-theme="dark"] .pixel-portrait { background: #1b1c19; }
+html[data-theme="dark"] .pixel-portrait { background-color: #1b1c19; background-image: url("/images/portrait-pryzm-still-dark.png"); }
 html[data-theme="dark"] .sidebar-news,
 html[data-theme="dark"] .research-interests { background: #1c1d1a; }
 html[data-theme="dark"] .sidebar-news-body,
@@ -1122,18 +1122,14 @@ html.theme-ready .pixel-portrait canvas {
 
 .publications-list#research {
     position: relative;
-    margin-top: .75rem;
+    margin-top: -2rem;
     padding-top: 0;
 }
 .publications-header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
+    position: static;
     width: calc(66.6667% - 10px);
-    margin: 0 !important;
+    margin: 0 0 .5rem auto !important;
     padding-top: 0 !important;
-    transform: translateY(calc(-100% - .25rem));
 }
 .publications-header > p { margin-bottom: 0; }
 .publications-list { margin-top: 0; }
@@ -1150,7 +1146,7 @@ html.theme-ready .pixel-portrait canvas {
     .publications-header {
         position: static;
         width: 100%;
-        margin: 2rem 0 .5rem !important;
+        margin: 0 0 .5rem !important;
         transform: none;
     }
 }
@@ -1285,3 +1281,22 @@ html[data-theme="dark"] .interest-futures { text-decoration-color: #aaa; }
 }
 
 .name-cv-line .name-small-caps { font-size: .78em; }
+
+/* Biography: readable paragraphs and a quiet hierarchy. */
+.bio { max-width: 65ch; }
+.bio .bio-intro { margin: 0 0 1.1rem; line-height: 1.8; }
+.bio .bio-lead { font-size: 17px; line-height: 1.65; }
+.bio .bio-intro a { color: inherit; font-weight: 500; }
+.bio .bio-intro a:hover,
+.bio .bio-intro a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+.bio-university-logo { height: 1em; width: auto; vertical-align: -.1em; }
+.bio-disinterests { margin: 0; padding: 0; }
+.bio-disinterests-label { color: var(--pixel-ink); font-family: inherit; font-size: inherit; font-weight: 500; line-height: inherit; }
+.bio-aside { color: var(--pixel-muted); font-size: 13px; line-height: 1.65; }
+.bio-disinterests .bio-intro { margin-bottom: 0; }
+
+/* The stacked mobile bio needs positive space before publications. */
+@media (max-width: 767px) {
+    .publications-list#research { margin-top: 1.25rem; }
+    .bio > .bio-intro:last-child { margin-bottom: 0; }
+}

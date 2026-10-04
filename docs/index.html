@@ -38,7 +38,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <link rel="stylesheet" href="/css/style.css?v=cc4a5987f68c17c091a0857da16872ee">
+    <link rel="stylesheet" href="/css/style.css?v=8456b265008a61d480f0861e39406415">
     
 </head>
 <body class="bg-body">
@@ -136,36 +136,27 @@
                         </a>
                     </li>
                 </ul>
-                <a href="/files/cv.pdf?v=7d6771dd814c" target="_blank" class="header-cv-link"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>CV</span><span aria-hidden="true">↗</span></a>
+                <a href="/files/cv.pdf?v=5e3a0279f965" target="_blank" class="header-cv-link"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>CV</span><span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-            <p class="bio-intro">
-                I am a second-year PhD student at the 
-                <a href="https://umich.edu/" style="color: var(--color-primary); font-weight: bold;">
-                    <img src="/images/umich-logo.png" alt="University of Michigan Logo" style="height: 1em; vertical-align: middle; margin-right: 0em;">
-                    University of Michigan (CSE)
-                </a>
-                advised by
-                <span id="advisors"></span>
-                <script>
-                    (function() {
-                        const advisors = [
-                            '<a href="https://guoanhong.com/" target="_blank" style="font-weight: 500;">Dr. Anhong Guo</a>',
-                            '<a href="https://web.eecs.umich.edu/~xwanghci/" target="_blank" style="font-weight: 500;">Dr. Xu Wang</a>'
-                        ];
-                        
-                        for (let i = advisors.length - 1; i > 0; i--) {
-                            const j = Math.floor(Math.random() * (i + 1));
-                            [advisors[i], advisors[j]] = [advisors[j], advisors[i]];
-                        }
-                        document.getElementById('advisors').innerHTML = advisors.join(' and ') + '.';
-                    })();
-                </script>
-                Previously, I earned a master's degree from Carnegie Mellon University (HCII) and dual bachelor's degrees from the University of Michigan and Shanghai Jiao Tong University.
-            </p>
-            <p class="bio-intro research-interest-paragraph">
-                ...<span class="interest-highlight">I study the relations between the <span class="interest-futures">ever-evolving AI systems and people</span> individually and collectively, and aim to design <span class="interest-futures">representations</span> and <span class="interest-futures">interactions</span> towards more desirable futures</span>...
-            </p>
+            <div class="bio">
+                <p class="bio-intro">
+                    I am a second-year PhD student at the
+                    <a href="https://umich.edu/" class="bio-affiliation"><img src="/images/umich-logo.png" alt="" class="bio-university-logo"> University of Michigan (CSE)</a>...
+                </p>
+                <p class="bio-intro">
+                    I study the relations between AI systems and people both individually and collectively, and design <span class="interest-futures">representations</span> and <span class="interest-futures">interactions</span> towards more desirable futures.
+                    <span class="interest-highlight">These days, I am more interested in understanding and accounting for human ambiguity and subjectivity...</span>
+                </p>
+                <p class="bio-intro">
+                    I earned dual bachelor's degrees from the University of Michigan and Shanghai Jiao Tong University and a master's degree from Carnegie Mellon University (HCII).
+                    I was fortunate to work with
+                    <a href="https://guoanhong.com/" target="_blank">Anhong Guo</a>,
+                    <a href="https://web.eecs.umich.edu/~xwanghci/" target="_blank">Xu Wang</a>,
+                    <a href="https://www.davidlindlbauer.com/" target="_blank">David Lindlbauer</a>, and
+                    <a href="https://www.andrew.cmu.edu/user/hongs/" target="_blank">Hong Shen</a>.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -735,7 +726,7 @@
     
 
 </div>
-<script src="/js/portrait-mosaic.js"></script>
+<script src="/js/portrait-mosaic.js?v=ef7b413e97130e42143aba293139bcc9"></script>
 <script>
     document.querySelectorAll('.abstract-toggle').forEach(function (button) {
         const text = document.getElementById(button.getAttribute('aria-controls'));

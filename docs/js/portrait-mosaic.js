@@ -91,6 +91,7 @@
     }
 
     function reveal() {
+        if (video.readyState < 2) return;
         videoReady = true;
         draw();
         root.classList.add('is-ready');
@@ -105,6 +106,7 @@
             return;
         }
         videoReady = false;
+        root.classList.remove('is-ready');
         video.setAttribute('src', desiredSource);
         video.load();
     }
@@ -112,10 +114,15 @@
     sizeCanvas();
     video.addEventListener('loadeddata', reveal);
     video.addEventListener('seeked', draw);
+    video.addEventListener('error', function () {
+        videoReady = false;
+        root.classList.remove('is-ready');
+    });
     window.addEventListener('themechange', function (event) {
         setTheme(event.detail.theme);
     });
     setTheme(currentTheme);
+    if (video.readyState >= 2) reveal();
     original.onload = function () {
         originalLayer.width = width;
         originalLayer.height = height;
