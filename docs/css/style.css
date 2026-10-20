@@ -696,7 +696,7 @@ html[data-theme="dark"] .pixel-portrait .theme-toggle {
 
 #research { margin-top: 5rem; }
 #research > hr { border-color: var(--pixel-ink) !important; opacity: 1; }
-#research h4 {
+.publications-header h4 {
     font-family: var(--pixel-display);
     font-size: clamp(2.2rem, 4vw, 3.7rem);
     font-weight: 550;
@@ -777,10 +777,13 @@ html[data-theme="dark"] .pixel-portrait .theme-toggle {
 .sidebar-news-item {
     grid-template-columns: 4.5rem 1fr;
     gap: .5rem;
-    padding: .4rem 0;
+    padding: 0;
     border-top: 0;
+    font-size: 13px;
+    line-height: 1.45;
 }
-.sidebar-news-item + .sidebar-news-item { margin-top: .25rem; }
+/* Add half a line so adjacent items are separated by 1.5 normal lines. */
+.sidebar-news-item + .sidebar-news-item { margin-top: .725em; }
 .sidebar-news-body, .sidebar-news-body p { line-height: 1.45; }
 .sidebar-news-body a {
     position: relative;
@@ -1112,7 +1115,7 @@ html.theme-ready .pixel-portrait canvas {
 }
 .col-md-8 h2 .chinese-name { font-size: .46em !important; }
 
-#research h4 {
+.publications-header h4 {
     font-size: clamp(1.5rem, 2.3vw, 2.1rem);
     line-height: 1;
 }
@@ -1122,13 +1125,13 @@ html.theme-ready .pixel-portrait canvas {
 
 .publications-list#research {
     position: relative;
-    margin-top: -2rem;
+    margin-top: 0;
     padding-top: 0;
 }
 .publications-header {
     position: static;
-    width: calc(66.6667% - 10px);
-    margin: 0 0 .5rem auto !important;
+    width: auto;
+    margin: 1.8rem 0 .5rem !important;
     padding-top: 0 !important;
 }
 .publications-header > p { margin-bottom: 0; }
@@ -1142,11 +1145,11 @@ html.theme-ready .pixel-portrait canvas {
 
 @media (max-width: 767px) {
     .col-md-8 h2 { font-size: clamp(1.85rem, 8.5vw, 2.45rem) !important; }
-    #research h4 { font-size: clamp(1.45rem, 6.4vw, 1.85rem); }
+    .publications-header h4 { font-size: clamp(1.45rem, 6.4vw, 1.85rem); }
     .publications-header {
         position: static;
         width: 100%;
-        margin: 0 0 .5rem !important;
+        margin: 1.8rem 0 .5rem !important;
         transform: none;
     }
 }
@@ -1225,7 +1228,7 @@ html[data-theme="dark"] .interest-futures { text-decoration-color: #aaa; }
     letter-spacing: -.01em;
     line-height: 1.12;
 }
-#research h4 {
+.publications-header h4 {
     font-weight: 700;
     letter-spacing: 0;
     line-height: 1.2;
@@ -1265,7 +1268,7 @@ html[data-theme="dark"] .interest-futures { text-decoration-color: #aaa; }
 
 /* Compact condensed headings inspired by the reference typography. */
 .col-md-8 .name-cv-line h2,
-#research .publications-header h4 {
+.publications-header h4 {
     font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
     font-weight: 700 !important;
     font-variation-settings: normal;
@@ -1274,10 +1277,10 @@ html[data-theme="dark"] .interest-futures { text-decoration-color: #aaa; }
     text-transform: uppercase;
 }
 .col-md-8 .name-cv-line h2 { font-size: 36px !important; }
-#research .publications-header h4 { font-size: 24px; }
+.publications-header h4 { font-size: 24px; }
 @media (max-width: 767px) {
     .col-md-8 .name-cv-line h2 { font-size: 32px !important; }
-    #research .publications-header h4 { font-size: 22px; }
+    .publications-header h4 { font-size: 22px; }
 }
 
 .name-cv-line .name-small-caps { font-size: .78em; }
@@ -1295,8 +1298,51 @@ html[data-theme="dark"] .interest-futures { text-decoration-color: #aaa; }
 .bio-aside { color: var(--pixel-muted); font-size: 13px; line-height: 1.65; }
 .bio-disinterests .bio-intro { margin-bottom: 0; }
 
-/* The stacked mobile bio needs positive space before publications. */
+/* Bio and Publications heading set the row height; news fills the sidebar. */
+.home-intro .bio > .bio-intro:last-child { margin-bottom: 0; }
+@media (min-width: 768px) {
+    .home-intro {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+    .home-intro > * { width: auto; min-width: 0; }
+    .home-sidebar {
+        display: flex;
+        flex-direction: column;
+        contain: size;
+        /* Reserve a usable portrait and news window even for a short bio. */
+        min-height: 24rem;
+    }
+    .home-sidebar > .text-center { flex: 0 0 auto; }
+    .home-sidebar .news-section {
+        display: flex;
+        flex: 1 1 0;
+        min-height: 0;
+    }
+    .home-sidebar .sidebar-news {
+        display: flex;
+        min-height: 0;
+    }
+    .home-sidebar .sidebar-news-scroll {
+        flex: 1;
+        min-width: 0;
+        max-height: none !important;
+    }
+}
+
+/* On narrow screens, show News after the bio and before Publications. */
 @media (max-width: 767px) {
-    .publications-list#research { margin-top: 1.25rem; }
-    .bio > .bio-intro:last-child { margin-bottom: 0; }
+    .home-intro {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        padding-inline: calc(var(--bs-gutter-x) * .5);
+    }
+    .home-intro > .home-sidebar,
+    .home-intro > .col-md-8 { display: contents; }
+    .home-sidebar > .text-center { order: 0; }
+    .home-intro .name-cv-line { order: 1; margin-top: 3rem; }
+    .home-intro .researcher-links-row { order: 2; }
+    .home-intro .bio { order: 3; }
+    .home-intro .news-section { order: 4; width: 100%; }
+    .home-intro .publications-header { order: 5; }
 }

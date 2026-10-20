@@ -38,7 +38,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <link rel="stylesheet" href="/css/style.css?v=8456b265008a61d480f0861e39406415">
+    <link rel="stylesheet" href="/css/style.css?v=11dbfd42ecd7b53df631a507dc96500f">
     
 </head>
 <body class="bg-body">
@@ -46,8 +46,8 @@
     <div class="main-content">
     
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
+    <div class="row home-intro">
+        <div class="col-md-4 home-sidebar">
             <div class="text-center">
                 <div class="pixel-portrait" data-pixel-portrait>
                     <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
@@ -157,16 +157,17 @@
                     <a href="https://www.andrew.cmu.edu/user/hongs/" target="_blank">Hong Shen</a>.
                 </p>
             </div>
-        </div>
-    </div>
-
-    <section id="research" class="publications-list">
         <div class="publications-header">
             <div class="d-flex align-items-baseline gap-3 mb-1">
-                <h4 class="mb-0">Publications</h4>
+                <h4 id="publications-heading" class="mb-0">Publications</h4>
             </div>
             <p class="text-muted" style="font-size: 12px;">* equal contribution</p>
         </div>
+        </div>
+    </div>
+
+    <section id="research" class="publications-list" aria-labelledby="publications-heading">
+
             
             
             
@@ -220,6 +221,9 @@
                         
                         
                     </div>
+                    <div class="pub-abstract-block">
+                        <p class="pub-abstract"><span id="abstract-generativetutorial">Visual instructions for physical tasks are typically authored in one context and followed in another, requiring users to translate demonstrated tools, materials, and spatial relationships into their own environment. We introduce Generative Tutorial, a conceptual framework for live visual instruction that depicts intended outcomes and actions within the user's environment and task flow. A formative evaluation of state-of-the-art image and video generation identifies failures and potential benefits across 15 physical tasks. Drawing on these findings, we build an augmented-reality prototype system that proactively generates goal images and demonstration videos using observed workspace context and predicted visual outcomes of preceding actions. A 24-participant lab study found higher task performance quality, greater perceived workspace correspondence, and shorter step-confirmation intervals with the system than with pre-authored guidance. Qualitative findings highlighted how contextual resemblance shapes trust, how generation errors affect interpretation, and how guidance delivery should adapt to users' needs, informing future designs.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-generativetutorial">show more</button></p>
+                    </div>
 
                     <div class="my-2 link">
                         
@@ -241,9 +245,6 @@
                         
 
                         
-                    </div>
-                    <div class="pub-abstract-block">
-                        <p class="pub-abstract"><span id="abstract-generativetutorial">Visual instructions for physical tasks are typically authored in one context and followed in another, requiring users to translate demonstrated tools, materials, and spatial relationships into their own environment. We introduce Generative Tutorial, a conceptual framework for live visual instruction that depicts intended outcomes and actions within the user's environment and task flow. A formative evaluation of state-of-the-art image and video generation identifies failures and potential benefits across 15 physical tasks. Drawing on these findings, we build an augmented-reality prototype system that proactively generates goal images and demonstration videos using observed workspace context and predicted visual outcomes of preceding actions. A 24-participant lab study found higher task performance quality, greater perceived workspace correspondence, and shorter step-confirmation intervals with the system than with pre-authored guidance. Qualitative findings highlighted how contextual resemblance shapes trust, how generation errors affect interpretation, and how guidance delivery should adapt to users' needs, informing future designs.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-generativetutorial">show more</button></p>
                     </div>
                 </div>
             </div>
@@ -325,6 +326,9 @@
                         
                         
                     </div>
+                    <div class="pub-abstract-block">
+                        <p class="pub-abstract"><span id="abstract-ailego">Existing Responsible AI (RAI) tools often depend on technical experts to identify harmful problems and are used after the system is built. However, there is growing recognition of the importance of cross-functional collaboration in RAI work during the early design stage. We introduce AI LEGO, a novel interactive tool designed to enhance RAI cross-functional collaboration by helping practitioners communicate and identify harmful design choices early, when problems are easier to address and less likely to cause harm. Through a co-design study with 8 cross-functional AI practitioners and a user study with 18 practitioners, we found that AI LEGO improves practitioners’ ability to identify potential harms in AI designs. Participants’ feedback also highlights AI LEGO’s effectiveness in facilitating early-stage harm identification across different roles. Finally, we discuss implications for supporting cross-functional collaboration in conducting RAI work in early-stage AI design.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-ailego">show more</button></p>
+                    </div>
 
                     <div class="my-2 link">
                         
@@ -346,7 +350,7 @@
                         
             
                         
-                        <a href="https://ai-lego.vercel.app/" class="me-2">
+                        <a href="https://ailego.vercel.app/" class="me-2">
                             <i class="fas fa-globe me-1"></i>Website</a>
                         </a>
                         
@@ -354,9 +358,6 @@
                         
 
                         
-                    </div>
-                    <div class="pub-abstract-block">
-                        <p class="pub-abstract"><span id="abstract-ailego">Existing Responsible AI (RAI) tools often depend on technical experts to identify harmful problems and are used after the system is built. However, there is growing recognition of the importance of cross-functional collaboration in RAI work during the early design stage. We introduce AI LEGO, a novel interactive tool designed to enhance RAI cross-functional collaboration by helping practitioners communicate and identify harmful design choices early, when problems are easier to address and less likely to cause harm. Through a co-design study with 8 cross-functional AI practitioners and a user study with 18 practitioners, we found that AI LEGO improves practitioners’ ability to identify potential harms in AI designs. Participants’ feedback also highlights AI LEGO’s effectiveness in facilitating early-stage harm identification across different roles. Finally, we discuss implications for supporting cross-functional collaboration in conducting RAI work in early-stage AI design.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-ailego">show more</button></p>
                     </div>
                 </div>
             </div>
@@ -438,6 +439,9 @@
                         
                         
                     </div>
+                    <div class="pub-abstract-block">
+                        <p class="pub-abstract"><span id="abstract-rubikon">Learning to solve a Rubik's Cube requires the learners to repeatedly practice a skill component, e.g., identifying a misplaced square and putting it back. However, for 3D physical tasks such as the Rubik's Cube, generating sufficient repeated practice opportunities for learners can be challenging, in part because repeated configuration of physical objects is strenuous. We propose Rubikon, an intelligent tutoring system for learning to solve the Rubik's Cube. Rubikon reduces the necessity for repeated manual configurations of the Rubik's Cube without compromising the tactile experience of handling a physical cube. The foundational design of Rubikon is an AR setup, where learners manipulate a physical cube while seeing an AR-rendered cube on the screen. Rubikon automatically generates configurations of the Rubik's Cube to target learners' weaknesses and help them exercise diverse knowledge components. A between-subjects experiment showed that Rubikon learners scored 25% higher on a post-test compared to baselines.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-rubikon">show more</button></p>
+                    </div>
 
                     <div class="my-2 link">
                         
@@ -463,9 +467,6 @@
                         
 
                         
-                    </div>
-                    <div class="pub-abstract-block">
-                        <p class="pub-abstract"><span id="abstract-rubikon">Learning to solve a Rubik's Cube requires the learners to repeatedly practice a skill component, e.g., identifying a misplaced square and putting it back. However, for 3D physical tasks such as the Rubik's Cube, generating sufficient repeated practice opportunities for learners can be challenging, in part because repeated configuration of physical objects is strenuous. We propose Rubikon, an intelligent tutoring system for learning to solve the Rubik's Cube. Rubikon reduces the necessity for repeated manual configurations of the Rubik's Cube without compromising the tactile experience of handling a physical cube. The foundational design of Rubikon is an AR setup, where learners manipulate a physical cube while seeing an AR-rendered cube on the screen. Rubikon automatically generates configurations of the Rubik's Cube to target learners' weaknesses and help them exercise diverse knowledge components. A between-subjects experiment showed that Rubikon learners scored 25% higher on a post-test compared to baselines.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-rubikon">show more</button></p>
                     </div>
                 </div>
             </div>
@@ -537,6 +538,9 @@
                         
                         
                     </div>
+                    <div class="pub-abstract-block">
+                        <p class="pub-abstract"><span id="abstract-newears">Efficiently searching and navigating virtual scenes is essential for performing various downstream tasks and ensuring a positive user experience in VR. Prior VR interaction techniques for such scenarios predominantly rely on users’ visual perception, which contrasts with physical reality, where people typically rely on multimodal information, especially auditory cues, to guide their spatial awareness. In this work, we explore the potential of leveraging auditory interaction techniques to enhance spatial navigation in virtual environments. We drew inspiration from prior distant interaction techniques and developed four approaches to augmenting how users hear in the virtual environment: Audio Teleportation, Audio Cone, Ninja Ears, and Boom Mic. In a comparative user study (N = 25), we evaluated these approaches against a baseline teleportation technique in a search task, where participants traversed a virtual environment to locate target items. Our results suggest that several of our audio interaction techniques may enable more efficient search behaviors while enhancing overall user experience. However, not all techniques were appreciated equally, suggesting that careful attention to their design is critical for ensuring their effectiveness. We conclude by discussing the potential implications of our results for future audio interaction technique designs.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-newears">show more</button></p>
+                    </div>
 
                     <div class="my-2 link">
                         
@@ -566,9 +570,6 @@
                             <i class="fas fa-video"></i> Talk
                         </a>
                         
-                    </div>
-                    <div class="pub-abstract-block">
-                        <p class="pub-abstract"><span id="abstract-newears">Efficiently searching and navigating virtual scenes is essential for performing various downstream tasks and ensuring a positive user experience in VR. Prior VR interaction techniques for such scenarios predominantly rely on users’ visual perception, which contrasts with physical reality, where people typically rely on multimodal information, especially auditory cues, to guide their spatial awareness. In this work, we explore the potential of leveraging auditory interaction techniques to enhance spatial navigation in virtual environments. We drew inspiration from prior distant interaction techniques and developed four approaches to augmenting how users hear in the virtual environment: Audio Teleportation, Audio Cone, Ninja Ears, and Boom Mic. In a comparative user study (N = 25), we evaluated these approaches against a baseline teleportation technique in a search task, where participants traversed a virtual environment to locate target items. Our results suggest that several of our audio interaction techniques may enable more efficient search behaviors while enhancing overall user experience. However, not all techniques were appreciated equally, suggesting that careful attention to their design is critical for ensuring their effectiveness. We conclude by discussing the potential implications of our results for future audio interaction technique designs.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-newears">show more</button></p>
                     </div>
                 </div>
             </div>
@@ -671,6 +672,9 @@
                         
                         
                     </div>
+                    <div class="pub-abstract-block">
+                        <p class="pub-abstract"><span id="abstract-activeai">As we witness groundbreaking advancements in Artificial Intelligence (AI), it is clear that the next generation must be equipped with AI literacy: the skill to interact, evaluate, and collaborate with AI systems. This study introduces ActiveAI, a scalable web-based tutoring system aligned with AI4K12’s five big ideas in AI, designed to foster AI literacy among K-12 students through active learning and interaction with intelligent agents. A controlled classroom study involving 171 middle school learners was conducted to assess the effectiveness of ActiveAI in fostering AI literacy skills and competency toward AI. Results showed that, compared to students in the tell-and-practice control condition, stu- dents who used ActiveAI exhibited higher post-test performance in the module about how next-word prediction and temperature work in large language models. Students also developed higher self-reported competence toward AI after using ActiveAI than in the control condition. We conclude by suggesting assessment designs that promote deeper engagement with AI concepts by addressing students’ common misconceptions, like “AI thinks just like humans”, in K-12 AI literacy education.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-activeai">show more</button></p>
+                    </div>
 
                     <div class="my-2 link">
                         
@@ -692,9 +696,6 @@
                         
 
                         
-                    </div>
-                    <div class="pub-abstract-block">
-                        <p class="pub-abstract"><span id="abstract-activeai">As we witness groundbreaking advancements in Artificial Intelligence (AI), it is clear that the next generation must be equipped with AI literacy: the skill to interact, evaluate, and collaborate with AI systems. This study introduces ActiveAI, a scalable web-based tutoring system aligned with AI4K12’s five big ideas in AI, designed to foster AI literacy among K-12 students through active learning and interaction with intelligent agents. A controlled classroom study involving 171 middle school learners was conducted to assess the effectiveness of ActiveAI in fostering AI literacy skills and competency toward AI. Results showed that, compared to students in the tell-and-practice control condition, stu- dents who used ActiveAI exhibited higher post-test performance in the module about how next-word prediction and temperature work in large language models. Students also developed higher self-reported competence toward AI after using ActiveAI than in the control condition. We conclude by suggesting assessment designs that promote deeper engagement with AI concepts by addressing students’ common misconceptions, like “AI thinks just like humans”, in K-12 AI literacy education.</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-activeai">show more</button></p>
                     </div>
                 </div>
             </div>

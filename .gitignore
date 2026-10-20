@@ -39,3 +39,6 @@ assets
 archetypes
 i18n
 content
+
+# Python bytecode cache
+__pycache__/
