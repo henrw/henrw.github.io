@@ -6,14 +6,35 @@
     <description>Recent content on Muzhe Wu&#39;s Homepage</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wumuzhe.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSCW2025</title>
+      <link>https://wumuzhe.com/news/2026-10-13/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2026-10-13/</guid>
+      <description>Attended CSCW in Salt Lake City and presented &lt;a href=&#34;#ailego&#34;&gt;AI LEGO&lt;/a&gt;.</description>
+    </item>
     <item>
       <title>Generative Tutorial: Towards Live Contextualized Visual Instructions for Physical Tasks</title>
       <link>https://wumuzhe.com/research/generativetutorial/</link>
       <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/research/generativetutorial/</guid>
       <description>&lt;p&gt;Generative Tutorial explores how live visual instructions can adapt to a person&amp;rsquo;s workspace and ongoing physical task. Informed by an evaluation of image and video generation across 15 tasks, the augmented-reality prototype generates goal images and demonstration videos using observed workspace context and predicted outcomes of earlier actions. A study with 24 participants found improved task performance quality, stronger perceived correspondence with the workspace, and shorter step-confirmation intervals compared with pre-authored guidance. The findings also examine how contextual resemblance, generation errors, and delivery timing shape users&amp;rsquo; interpretation and trust.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prelim1</title>
+      <link>https://wumuzhe.com/news/2026-09-15/</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2026-09-15/</guid>
+      <description>Submitted &lt;a href=&#34;#generativetutorial&#34;&gt;Generative Tutorial&lt;/a&gt;🤞; got cooked in my first prelim..</description>
+    </item>
+    <item>
+      <title>Change</title>
+      <link>https://wumuzhe.com/news/2026-08-30/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2026-08-30/</guid>
+      <description>Rethought and decided to pivot my research; thanks to my former advisors.</description>
     </item>
     <item>
       <title>AI LEGO: Scaffolding Cross-Functional Collaboration in Industrial Responsible AI Practices during Early Design Stages</title>
@@ -23,11 +44,11 @@
       <description>&lt;p&gt;selected: true&lt;/p&gt;&#xA;&lt;p&gt;Existing Responsible AI (RAI) tools often depend on technical experts to identify harmful problems and are used after the system is built. However, there is growing recognition of the importance of cross-functional collaboration in RAI work during the early design stage. We introduce AI LEGO, a novel interactive tool designed to enhance RAI cross-functional collaboration by helping practitioners communicate and identify harmful design choices early, when problems are easier to address and less likely to cause harm. Through a co-design study with 8 cross-functional AI practitioners and a user study with 18 practitioners, we found that AI LEGO improves practitioners’ ability to identify potential harms in AI designs.  Participants’ feedback also highlights AI LEGO’s effectiveness in facilitating early-stage harm identification across different roles. Finally, we discuss implications for supporting cross-functional collaboration in conducting RAI work in early-stage AI design.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>CSCW2026</title>
-      <link>https://wumuzhe.com/news/2026-03-17/</link>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://wumuzhe.com/news/2026-03-17/</guid>
-      <description>&lt;a href=&#34;#ailego&#34;&gt;AI LEGO&lt;/a&gt; accepted to CSCW 2026. See you in Salt Lake City!</description>
+      <title>PhD Start</title>
+      <link>https://wumuzhe.com/news/2025-08-30/</link>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2025-08-30/</guid>
+      <description>Started my PhD at UMich CSE.</description>
     </item>
     <item>
       <title>DIS2025</title>
@@ -56,6 +77,13 @@
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/unpublished/agencyperformance/</guid>
       <description>&lt;p&gt;Virtual Reality (VR) allows for natural, embodied interactions with virtual elements, fostering immersive experiences. However, these interactions can feel taxing and become more challenging as task demands increase (e.g., selecting small, densely clustered targets). To help users perform such complex tasks, there exist a number of assistance techniques such as providing users with suggestions or automatically performing selections for them. While those techniques increase users’ task performance, their impact on user experience, specifically their Sense of Agency (SoA)—the subjective feeling of controlling one’s actions and their outcomes, is unknown. To investigate the trade-off between task assistance and SoA, we contribute results from a within-subject user study (N=12). We quantitatively examine SoA in VR target selection in relation to task difficulty (2 levels) and assistance (3 levels) which implicitly preempted participants’ actions. We measured SoA with both implicit measures of the intentional binding paradigm (predictive) and participants’ self-reports (postdictive), and compared those to participants’ task performance and behavioral metrics. Our results reveal that while a higher level of assistance improved performance, postdictive SoA remained stable independent of task settings and predictive SoA increased in easy task settings with more assistance. This highlights the feasibility to provide assistance to users in complex tasks, specifically when the assistance technique is designed unobtrusively.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>METALS</title>
+      <link>https://wumuzhe.com/news/2024-09-03/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2024-09-03/</guid>
+      <description>Graduated from Master&amp;rsquo;s at CMU HCII.</description>
     </item>
     <item>
       <title>New Ears: An Exploratory Study of Audio Interaction Techniques for Performing Search in a Virtual Reality Environment</title>

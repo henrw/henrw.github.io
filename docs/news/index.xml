@@ -6,14 +6,35 @@
     <description>Recent content in News on Muzhe Wu&#39;s Homepage</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wumuzhe.com/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CSCW2026</title>
-      <link>https://wumuzhe.com/news/2026-03-17/</link>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://wumuzhe.com/news/2026-03-17/</guid>
-      <description>&lt;a href=&#34;#ailego&#34;&gt;AI LEGO&lt;/a&gt; accepted to CSCW 2026. See you in Salt Lake City!</description>
+      <title>CSCW2025</title>
+      <link>https://wumuzhe.com/news/2026-10-13/</link>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2026-10-13/</guid>
+      <description>Attended CSCW in Salt Lake City and presented &lt;a href=&#34;#ailego&#34;&gt;AI LEGO&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>Prelim1</title>
+      <link>https://wumuzhe.com/news/2026-09-15/</link>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2026-09-15/</guid>
+      <description>Submitted &lt;a href=&#34;#generativetutorial&#34;&gt;Generative Tutorial&lt;/a&gt;🤞; got cooked in my first prelim..</description>
+    </item>
+    <item>
+      <title>Change</title>
+      <link>https://wumuzhe.com/news/2026-08-30/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2026-08-30/</guid>
+      <description>Rethought and decided to pivot my research; thanks to my former advisors.</description>
+    </item>
+    <item>
+      <title>PhD Start</title>
+      <link>https://wumuzhe.com/news/2025-08-30/</link>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2025-08-30/</guid>
+      <description>Started my PhD at UMich CSE.</description>
     </item>
     <item>
       <title>DIS2025</title>
@@ -28,6 +49,13 @@
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://wumuzhe.com/news/2024-10-14/</guid>
       <description>Attended ISMAR in Seattle and presented &lt;a href=&#34;#newears&#34;&gt;New Ears&lt;/a&gt;.</description>
+    </item>
+    <item>
+      <title>METALS</title>
+      <link>https://wumuzhe.com/news/2024-09-03/</link>
+      <pubDate>Tue, 03 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://wumuzhe.com/news/2024-09-03/</guid>
+      <description>Graduated from Master&amp;rsquo;s at CMU HCII.</description>
     </item>
   </channel>
 </rss>
